@@ -497,3 +497,64 @@ h1, h2, h3, h4, h5, h6 {
     right: 10px;
   }
 }
+
+
+/* SITE-FOOTER */
+/* SITE-FOOTER__TOP */
+/* Footer */
+
+.site-footer{
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+/* .site-footer__container{
+  
+} */
+
+.site-footer__top{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.site-footer__info{
+  max-width: 200px;
+}
+
+.site-footer__info:not(:last-child){
+  margin-right: 30px;
+}
+
+.site-footer__heading{
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.site-footer__list{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.site-footer__item:not(:last-child){
+  margin-bottom: 16px;
+}
+.site-footer__link{
+  font-size: 14px;
+  line-height: 1.36;
+  font-family: var(--open-sans);
+  color: var(--green-color);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.site-footer__link:hover{
+  color: #f80;
+}
+
+.footer-link:active{
+  opacity: 0.6;
+}
