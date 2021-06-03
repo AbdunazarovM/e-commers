@@ -411,3 +411,23 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 0;
   }
 }
+
+@media screen and (max-width: 540px){
+
+}
+
+@media screen and (max-width: 500px){
+
+  .site-header__list--chat .site-header__icon:not(:nth-child(3)){
+    margin-right: 0;
+  }
+
+  .site-header__list--chat .site-header__icon:first-child{
+    margin-right: 33px;
+  }
+
+  .site-header__list--chat .site-header__icon:last-child{
+    width: 100%;
+    text-align: center;
+  }
+}
