@@ -399,8 +399,12 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .site-header__list--kind-of-products{
+    display: none;
     flex-direction: column;
     text-align: center;
+  }
+  .list--open{
+    display: flex;
   }
 
   .site-header__products:not(:last-child){
