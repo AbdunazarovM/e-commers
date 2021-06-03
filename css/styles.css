@@ -1,8 +1,8 @@
 /* FONTS */
 @font-face {
     font-family: "Poppins";
-    src: url("Poppins-Bold.woff2") format("woff2"),
-        url("Poppins-Bold.woff") format("woff");
+    src: url("../fonts/Poppins-Bold.woff2") format("woff2"),
+        url("../fonts/Poppins-Bold.woff") format("woff");
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -10,8 +10,8 @@
 
 @font-face {
     font-family: "Poppins";
-    src: url("Poppins-SemiBold.woff2") format("woff2"),
-        url("Poppins-SemiBold.woff") format("woff");
+    src: url("../fonts/Poppins-SemiBold.woff2") format("woff2"),
+        url("../fonts/Poppins-SemiBold.woff") format("woff");
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -19,8 +19,8 @@
 
 @font-face {
     font-family: "Poppins";
-    src: url("Poppins-Medium.woff2") format("woff2"),
-        url("Poppins-Medium.woff") format("woff");
+    src: url("../fonts/Poppins-Medium.woff2") format("woff2"),
+        url("../fonts/Poppins-Medium.woff") format("woff");
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -28,8 +28,8 @@
 
 @font-face {
     font-family: "Open Sans";
-    src: url("OpenSans-Regular.woff2") format("woff2"),
-        url("OpenSans-Regular.woff") format("woff");
+    src: url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+        url("../fonts/OpenSans-Regular.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -134,6 +134,7 @@ h1, h2, h3, h4, h5, h6 {
 .site-header__link {
   color: var(--green-color);
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .site-header__link--number, .site-header__link--email{
@@ -149,13 +150,16 @@ h1, h2, h3, h4, h5, h6 {
 /* SITE-HEADER-MENU */
 .site-header__menu {
   display: flex;
-  align-items: top;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: space-between;
   margin: 40px 0;
 }
 
+
 .logo {
   margin-right: 158px;
+  flex-shrink: 0;
 }
 
 .logo-img {
@@ -251,18 +255,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .site-header__list--kind-of-products {
   display: flex;
-  flex-wrap: wrap;
-  list-style-type: none;
+  justify-content: center;
   align-items: center;
-  margin: 0;
-  padding: 0;
+  flex-wrap: wrap;
 } 
 
 .site-header__products {
   display: flex;
   align-items: center;
   position: relative;
-  padding: 16px 0;
+  margin-top: 16px;       
+  padding-bottom: 16px;
 }
 
 .site-header__products:not(:last-child) {
@@ -316,200 +319,50 @@ h1, h2, h3, h4, h5, h6 {
   color: #e6704b;
 }
 
+/* RESPONSIVE */
+@media screen and (max-width: 1000px) {
 
-
-/* BUTTON */
-/* .button {
-  display: inline-block;
-  padding: 11px 40px;
-  border: 3px solid transparent;
-  text-decoration: none;
-  text-transform: capitalize;
-  font-size: 15px;
-  line-height: 25px;
-  font-family: var(--heading-font-stack);
-  font-weight: bold;
-  background-color: var(--yellow);
-  color: #fff;
-  white-space: nowrap;
-}
-
-.button:hover {
-  border-color: var(--yellow);
-  background-color: transparent;
-  color: var(--yellow);
-}
-
-.button:active {
-  opacity: 0.6;
-}
-
-
-/* SITE-HEADER */
-/*.site-header {
-  position: fixed;
-  z-index: 99;
-  left: 0;
-  top: 0;
-  width: 100%;
-  font-family: var(--heading-font-stack);
-  font-weight: bold;
-}
-
-.site-header__container {
-  position: relative;
-  z-index: 1;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color: #fff;
-}
-
-/* SITENAV */
-/*.sitenav {
-  display: flex;
-  align-items: center;
-}
-
-.site-header__top {
-  margin-right: 60px;
-}
-
-.site-header__logo {
-  flex-shrink: 0;
-  display: block;
-}
-
-/* LOGO */
-/*.logo:hover {
-  opacity: 0.8;
-}
-
-.logo:active {
-  opacity: 0.6;
-}
-
-.logo__img {
-  display: block;
-}
-
-/* SITE-HEADER-MENU-TOGGLER */
-/*.site-header__menu-toggler {
-  display: none;
-}
-
-/* SITE-HEADER-OFF-CANVAS */
-/*.site-header__off-canvas {
-  flex-grow: 1;
-  display: flex;
-  align-items: center;
-}
-
-.sitenav__list {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-  margin-right: auto;
-  list-style: none;
-}
-
-.sitenav__item:not(:last-child) {
-  margin-right: 32px;
-}
-
-.sitenav__link {
-  color: var(--dim-grey);
-}
-
-.sitenav__link:hover {
-  color: var(--yellow);
-}
-
-.sitenav__link:active {
-  opacity: 0.6;
-}
-
-.site-header__button {
-  margin-left: 32px;
-}
-
-
-/* RESPONSIVENESS */
-/*@media only screen and (max-width: 715px) {
-  .site-header--open {
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.75);
-  }
-
-  .site-header__top {
+  .logo{
+    width: 100%;
+    text-align: center;
     margin-right: 0;
+    margin-bottom: 16px;
   }
 
-  .sitenav {
+  .logo-img{
+    display: inline-block;
+  }
+}
+
+/*@media screen and (max-width: 770px) {
+
+  .site-header__navbar {
+    flex-direction: column;
     justify-content: center;
   }
 
-  .site-header__menu-toggler {
-    position: absolute;
-    left: 32px;
-    top: 50%;
-    transform: translateY(-50%);
-    display: block;
-    width: 19px;
-    height: 16px;
-    padding: 0;
-    border: none;
-    background-color: transparent;
-    background-image: url("../img/icon-menu-open.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center center;
-    outline-offset: 10px;
+  .site-header__list--chat{
+    margin-bottom: 16px;
   }
 
-  .site-header__menu-toggler::before {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 54px;
-    height: 54px;
-    content: "";
-  }
-
-  .site-header--open .site-header__menu-toggler {
-    background-image: url("../img/icon-menu-close.svg");
-  }
-
-  .site-header__off-canvas{
-    display: none;
-    background-color: #333a44;
-  }
-
-  .site-header--open .site-header__off-canvas {
-    position: absolute;
-    left: 0;
-    top: 69px;
-    display: flex;
-    flex-direction: column;
-    height: calc(100vh - 69px);
-    padding: 32px;
-    padding-top: 64px;
-  }
-
-  .sitenav__list {
-    flex-grow: 1;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .sitenav__item:not(:last-child) {
+  .logo{
     margin-right: 0;
-    margin-bottom: 25px;
+    margin-bottom: 0;
+    width: 177px;
   }
 
-  .site-header__button {
-    margin-left: 0;
+  .logo-img{
+    display: block;
   }
-} 
+
+  .site-header__form{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 16px;
+    order: 3;
+  }
+
+  .site-header__purchase-information{
+    order: 2;
+  }
+}
