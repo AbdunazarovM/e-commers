@@ -499,36 +499,116 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* MAIN */
+main{
+  padding-top: 64px;
+}
 /* CATEGORY-MENU */
 .category-menu {
 }
 .category-menu__container {
-}
-.container {
+  display: flex;
 }
 .category-menu__heading-list {
+  margin: 0;
+  margin-right: auto;
+  padding: 0;
 }
 .categoty-menu__heading {
+  margin: 0;
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
 }
 .category-menu__list {
+  list-style-type: none;
+  margin: 0;
+  margin-bottom: 48px;
+  padding: 0;
 }
 .category-menu__item {
 }
+.category-menu__item:not(:last-child){
+  margin-bottom: 12px;
+}
 .category-menu__link {
+  font-family: var(--open-sans);
+  font-size: 14px;
+  line-height: 1.36;
+  color: var(--green-color);
 }
 .category-menu__link-bnt {
+  display: flex;
+  align-items: center;
+  padding: 13px 16px;
+  border-radius: 12px;
+  background-color: #f5f5f5;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--text-color);
 }
-.category-menu__link-bnt--product {
+.category-menu__link-bnt--product::after{
+  background-image: url("../images/arrow-right-black.svg");
+}
+.category-menu__link-bnt::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  margin-left: 6px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
 }
 .category-menu__banner-list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 .category-menu__banner-item {
+  width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 48px;
+  padding-bottom: 32px;
+  padding-left: 32px;
+  border-radius: 12px;
+  background-image: url("../images/vegs-banner.png");
+  background-color: var(--cards-bg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  overflow: hidden;
+}
+.category-menu__banner-item:not(:last-child) {
+  margin-right: 32px;
 }
 .cotegory-menu__subfocus {
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--green-color);
 }
 .category-menu__banner-heading {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 94px;
 }
-.category-menu__link--banner {
+.category-menu__link-bnt--banner {
+  color: var(--green-color);
+  text-decoration: none;
+  border-radius: 12px;
+  padding: 12px 16px;
+  border: 2px solid #92c064;
+}
+
+.category-menu__link-bnt--banner::after{
+  background-image: url("../images/arrow-right-black.svg");
 }
 
 
