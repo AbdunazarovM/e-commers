@@ -695,6 +695,13 @@ main{
 
 }
 
+@media screen and (max-width: 450px){
+ 
+  .category-menu__banner-item{
+    width: 360px;
+  }
+}
+
 
 /* SITE-FOOTER */
 /* SITE-FOOTER__TOP */
