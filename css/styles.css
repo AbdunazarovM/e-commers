@@ -702,6 +702,13 @@ main{
   }
 }
 
+@media screen and (max-width: 390px){
+ 
+  .category-menu__banner-item{
+    width: 300px;
+  }
+}
+
 
 /* SITE-FOOTER */
 /* SITE-FOOTER__TOP */
