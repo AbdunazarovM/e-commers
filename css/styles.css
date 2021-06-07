@@ -661,6 +661,39 @@ main{
 
 }
 
+@media screen and (max-width: 900px){
+
+  .category-menu__banner-list{
+    flex-direction: column;
+  }
+
+  .category-menu__banner-item:not(:last-child){
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .category-menu__item{
+    margin-top: 10px;
+    padding: 6px 10px;
+    background-color: var(--light-grey);
+    border-radius: 12px;
+  }
+
+  .category-menu__item:hover{
+    background-color: var(--green-color);
+  }
+
+  .category-menu__item:hover .category-menu__link{
+    color: var(--white);
+  }
+
+  .category-menu__link{
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+  }
+
+}
 
 
 /* SITE-FOOTER */
