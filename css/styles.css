@@ -723,6 +723,8 @@ main{
 /* CATEGORY BEST */
 .category-menu__best-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: flex-start;
   list-style-type: none;
   margin: 0;
@@ -807,6 +809,37 @@ main{
   color: var(--white);
   text-decoration: none;
 }
+
+@media screen and (max-width: 915px){
+
+  .category-menu__best-item:not(:first-child){
+    margin-bottom: 20px;
+  }
+ 
+  .category-menu__best-item:first-child{
+    order: 1;
+  }
+
+}
+
+@media screen and (max-width: 615px){
+
+  .category-menu__best-list{
+    flex-direction: column;
+  }
+
+
+  .category-menu__best-item:not(:last-child){
+    margin-bottom: 20px;
+    margin-right: 0;  
+  }
+
+  .category-menu__best-item:first-child{
+    order: 0;
+  }
+
+}
+
 
 
 /* SITE-FOOTER */
