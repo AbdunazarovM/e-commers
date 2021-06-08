@@ -504,7 +504,8 @@ main{
 }
 /* CATEGORY-MENU */
 .category-menu{
-  padding-bottom: 128px;
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 
 
@@ -839,6 +840,8 @@ main{
   }
 
 }
+
+/* OUR SAYS */
 
 
 
