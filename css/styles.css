@@ -969,10 +969,6 @@ main{
   padding-bottom: 64px;
 }
 
-.posts__container {
-
-}
-
 .posts__tips {
   display: flex;
   flex-wrap: wrap;
@@ -1026,10 +1022,6 @@ main{
   left: 24px;
 }
 
-.posts__profil-box {
-
-}
-
 .posts__profil-img {
   margin-right: 8px;
 }
@@ -1072,20 +1064,12 @@ main{
   margin-bottom: 32px;
 }
 
-.posts__food-info {
-
-}
-
 .posts__food-title {
   max-width: 225px;
   margin-bottom: 16px;
   font-size: 15px;
   line-height: 1.5;
   font-weight: 500;
-}
-
-.posts__food-img {
-
 }
 
 @media screen and (max-width: 1150px){
