@@ -890,6 +890,7 @@ main{
   font-weight: 700;
   font-size: 15px;
   line-height: 1.5;
+  white-space: nowrap;
 }
 
 .our-says__button::after{
@@ -1121,7 +1122,53 @@ main{
 }
 
 @media screen and (max-width: 800px){
-  
+  .posts__foods-box{
+    max-width: unset;
+    max-width: 400px;
+    display: unset;
+    margin-top: unset;
+  }
+
+  .posts__food{
+    flex-direction: unset;
+    text-align: unset;
+    align-items: unset;
+  }
+
+  .posts__food:not(:last-child){
+    margin-bottom: 24px;
+    margin-right: 0;
+  }
+
+  .posts__food-img{
+    margin-left: 20px;
+    margin-bottom: unset;
+    order: 0;
+  }
+}
+
+@media screen and (max-width: 682px){
+
+  .posts__tips{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .posts__dinner{
+    max-width: unset;
+    max-width: 90%;
+    margin-right: 0;
+  }
+
+  .posts__vegetable-your-family{
+    max-width: unset;
+    max-width: 70%;
+    margin-right: 0;
+  }
+
+  .posts__foods-box{
+    margin-top: 48px;
+  }
 }
 
 
