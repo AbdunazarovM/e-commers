@@ -972,32 +972,56 @@ main{
 
 }
 
-.our-says__heading-box {
-
-}
-
-.our-says__heading {
-
-}
-
-.our-says__button {
-
-}
-
 .posts__tips {
-
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .posts__dinner {
-
+  max-width: 470px;
+  margin-right: 30px;
+  position: relative;
 }
 
-.posts__dinner-tips {
-  
+.posts__dinner-tips{
+  position: absolute;
+  top: 24px;
+  left: 24px;
+}
+
+.posts__dinner-tips, .posts__vegetable {
+  padding: 0 8px;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 600;
+  color: var(--green-color);
+  background-color: var(--cards-bg);
+  border-radius: 12px;
+  white-space: nowrap;
+}
+
+.posts__vegetable{
+  margin-bottom: 8px;
 }
 
 .posts__dinner-title {
+  max-width: 380px;
+  position: absolute;
+  bottom: 50px;
+  left: 24px;
+  font-size: 22px;
+  line-height: 1.5;
+  font-weight: 600;
+  color: var(--white);
+}
 
+.posts__dinner-profil{
+  display: flex;
+  align-items: center;
+  color: var(--white);
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
 }
 
 .posts__profil-box {
@@ -1005,39 +1029,45 @@ main{
 }
 
 .posts__profil-img {
-
+  margin-right: 8px;
 }
 
-.posts__profil-info {
-
+.posts__profil-info{
+  margin-right: 16px;
 }
 
-.posts__profil-time {
-
+.posts__profil-info, .posts__profil-time {
+  font-size: 12px;
+  line-height: 1.36;
+  font-family: var(--open-sans);
 }
 
 .posts__vegetable-your-family {
-
+  margin-right: 30px;
+  max-width: 270px;
 }
 
 .posts__vegetable-photo {
-
-}
-
-.posts__vegetable {
-
+  margin-bottom: 24px;
 }
 
 .posts__title-vegetable {
-
+  margin-bottom: 16px;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 600;
 }
 
 .posts__foods-box {
-
+  max-width: 370px;
 }
 
 .posts__food {
+  display: flex;
+}
 
+.posts__food:not(:last-child){
+  margin-bottom: 32px;
 }
 
 .posts__food-info {
@@ -1045,7 +1075,11 @@ main{
 }
 
 .posts__food-title {
-
+  max-width: 225px;
+  margin-bottom: 16px;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 500;
 }
 
 .posts__food-img {
