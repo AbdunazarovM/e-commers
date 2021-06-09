@@ -962,6 +962,12 @@ main{
   flex-direction: column;
 }
 
+/* POSTS */
+.posts{
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
 
 /* SITE-FOOTER */
 /* SITE-FOOTER__TOP */
