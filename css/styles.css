@@ -814,12 +814,16 @@ main{
 
 @media screen and (max-width: 935px){
 
-  .category-menu__best-item:not(:first-child){
+  .category-menu__best-item:not(:last-child){
     margin-bottom: 20px;
   }
 
-  .category-menu__best-item::first-letter(:last-child){
+  .category-menu__best-item:not(:last-child){
     margin-right: 0;
+  }
+
+  .category-menu__best-item:nth-of-type(odd){
+    margin-right: 32px;
   }
 
 }
