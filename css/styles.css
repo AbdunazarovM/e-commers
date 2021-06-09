@@ -975,6 +975,7 @@ main{
 .posts__tips {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .posts__dinner {
@@ -1084,6 +1085,43 @@ main{
 
 .posts__food-img {
 
+}
+
+@media screen and (max-width: 1150px){
+
+  .posts__foods-box{
+    max-width: unset;
+    max-width: 70%;
+    display: flex;
+    margin-top: 40px;
+  }
+
+  .posts__food{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .posts__food:not(:last-child){
+    margin-bottom: 0;
+    margin-right: 32px;
+  }
+
+  .posts__food-img{
+    margin-bottom: 24px;
+    order: -1;
+  }
+
+}
+
+@media screen and (max-width: 830px){
+  .posts__dinner{
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (max-width: 800px){
+  
 }
 
 
