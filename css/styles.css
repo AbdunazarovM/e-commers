@@ -1480,14 +1480,14 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/*@media screen and (max-width: 595px){
+@media screen and (max-width: 595px){
 
   .f-main-header__checkbox:nth-of-type(3){
     margin-top: 16px;
   }
 }
 
-@media screen and (max-width: 455px){
+/*@media screen and (max-width: 455px){
 
   .f-main-header__inputs:not(:last-child) {
     margin-right: 16px;
