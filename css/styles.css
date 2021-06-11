@@ -1487,7 +1487,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/*@media screen and (max-width: 455px){
+@media screen and (max-width: 455px){
 
   .f-main-header__inputs:not(:last-child) {
     margin-right: 16px;
@@ -1496,7 +1496,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media screen and (max-width: 380px) {
+/*@media screen and (max-width: 380px) {
   
   .f-main-header__applied-result:last-child{
     margin-left: 12px;
