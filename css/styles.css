@@ -1271,13 +1271,11 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* *******************FRUIT AND VEGETABLE****************** */
-
-.f-main-header__container {
-}
 .f-main-header__top {
   margin-top: 16px;
   margin-bottom: 24px;
 }
+
 .f-main-header__top-link {
   color: var(--text-color);
   text-decoration: none;
@@ -1285,21 +1283,30 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.4;
   font-family: var(--open-sans);
 }
+
 .f-main-header__top-homepage {
   color: var(--snow);
 }
+
 .f-main-header__middle {
   display: flex;
   align-items: center;
   margin-bottom: 24px;
 }
+
 .f-main-header__middle-heading {
   margin: 0;
   margin-right: auto;
+  text-align: center;
   font-weight: 600;
   font-size: 32px;
   line-height: 1.5;
 }
+
+.f-main-header__middle-box-link{
+  display: flex;
+}
+
 .f-main-header__middle-link {
   display: flex;
   font-size: 12px;
@@ -1326,13 +1333,16 @@ h1, h2, h3, h4, h5, h6 {
 .f-main-header__middle-link-grid::before{
   background-image: url("../images/grid-view-icon.svg");
 }
+
 .f-main-header__middle-link-list::before{
   background-image: url("../images/list-view-icon.svg");
   filter: grayscale(90%);
 }
+
 .f-main-header__middle-link-list{
   color: var(--text-color);
 }
+
 .f-main-header__middle-product-number{
   margin-right: 4px;
   padding: 0 8px;
@@ -1341,12 +1351,14 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 12px;
 }
 
-.f-main-header__bottom {
-}
 .f-main-header__form {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 16px;
 }
+
 .f-main-header__inputs {
   display: flex;
   align-items: center;
@@ -1355,32 +1367,29 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid #d1d1d1;
   border-radius: 12px;
 }
+
 .f-main-header__inputs:not(:last-child){
   margin-right: 16px;
 }
-.f-main-header__form-radio {
-  
-}
+
 .f-main-header__label{
   font-family: var(--open-sans);
   line-height: 1.36;
+  white-space: nowrap;
 }
+
 .f-main-header__label-radios:not(:last-child) {
   margin-right: 16px;
 }
+
 .f-main-header__radios {
   margin-right: 8px;
 }
 
-.f-main-header__inputs {
-}
-.f-main-header__checkbox {
-}
-.f-main-header__label {
-}
 .f-main-header__bottom-checkbox {
   margin-right: 8px;
 }
+
 .f-main-header__bottom-nbm {
   margin-left: 8px;
   padding: 0 8px;
@@ -1390,9 +1399,11 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
   line-height: 1.5;
 }
+
 .f-main-header__bottom-nbm-12{
   margin-right: 24px;
 }
+
 .f-main-header__bottom-select{
   border: none;
   padding-left: 24px;
@@ -1401,18 +1412,24 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--light-grey);
   outline: none;
 }
+
 .f-main-header__applied-filters {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.5;
 }
+
 .f-main-header__applied-results {
   margin: 0;
   margin-right: 12px;
   color: var(--snow);
+  white-space: nowrap;
 }
+
 .f-main-header__applied-result {
   display: flex;
   align-items: center;
@@ -1420,7 +1437,9 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 12px;
   color: var(--green-color);
   background-color: var(--cards-bg);
+  white-space: nowrap;
 }
+
 .f-main-header__applied-result::after{
   content: "";
   width: 12px;
@@ -1430,6 +1449,57 @@ h1, h2, h3, h4, h5, h6 {
   background-repeat: no-repeat;
   background-position: center center;
 }
+
 .f-main-header__applied-result:not(:last-child){
   margin-right: 12px;
 }
+
+@media screen and (max-width: 850px){
+
+  .f-main-header__bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .f-main-header__check-select{
+    margin-top: 16px;
+  }
+}
+
+/* @media screen and (max-width: 675px){
+
+  .f-main-header__middle-heading{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+  }
+
+  .f-main-header__middle{
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 595px){
+
+  .f-main-header__checkbox:nth-of-type(3){
+    margin-top: 16px;
+  }
+}
+
+@media screen and (max-width: 455px){
+
+  .f-main-header__inputs:not(:last-child) {
+    margin-right: 16px;
+    margin-top: 16px;
+    margin-left: 16px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  
+  .f-main-header__applied-result:last-child{
+    margin-left: 12px;
+    margin-top: 8px;
+  }
+} */
