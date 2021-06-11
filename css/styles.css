@@ -1496,10 +1496,10 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/*@media screen and (max-width: 380px) {
+@media screen and (max-width: 380px) {
   
   .f-main-header__applied-result:last-child{
     margin-left: 12px;
     margin-top: 8px;
   }
-} */
+} 
