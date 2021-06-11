@@ -222,7 +222,63 @@
     <main>
         <section class="f-main-header">
             <div class="f-main-header__container container">
-                
+                <div class="f-main-header__top">
+                    <a class="f-main-header__top-link f-main-header__top-homepage" href="">Homepage</a>
+                    <span class="f-main-header__top-link f-main-header__top-homepage">/</span>
+                    <a class="f-main-header__top-link" href="">Fruit and vegetables</a>
+                </div>
+
+                <section class="f-main-header__middle">
+                    <h1 class="f-main-header__middle-heading">Fruit and vegetables</h1>
+
+                    <a href="#" class="f-main-header__middle-link f-main-header__middle-link-grid">Grid view</a>
+                    <a href="#" class="f-main-header__middle-link f-main-header__middle-link-list">List view</a>
+                    <a href="#" class="f-main-header__middle-link">
+                        <span class="f-main-header__middle-product-number">117</span>Products
+                    </a>
+                </section>
+
+                <div class="f-main-header__bottom">
+                    <form class="f-main-header__form" action="get">
+                        <div class="f-main-header__inputs f-main-header__form-radio">
+                            <label class="f-main-header__label f-main-header__label-radios" for="radio-field">
+                                <input class="f-main-header__radios" type="radio" name="filter-products" id="radio-field">Filtre text
+                            </label>
+                            <label class="f-main-header__label f-main-header__label-radios" for="radio-field2">
+                                <input class="f-main-header__radios" type="radio" name="filter-products" id="radio-field2" checked>Filtre text
+                            </label>
+                        </div>
+                        <div class="f-main-header__inputs f-main-header__checkbox">
+                            <label  class="f-main-header__label f-main-header__label-checkbox" for="checkbox-filtre1">
+                                <input class="f-main-header__bottom-checkbox" type="checkbox" id="checkbox-filtre1">Filtre
+                            </label>
+                            <span class="f-main-header__bottom-nbm">Nbm</span>
+                        </div>
+                        <div class="f-main-header__inputs f-main-header__checkbox">
+                            <label  class="f-main-header__label f-main-header__label-checkbox" for="checkbox-filtre2">
+                                <input class="f-main-header__bottom-checkbox" type="checkbox" id="checkbox-filtre2">Filtre
+                            </label>
+                            <span class="f-main-header__bottom-nbm">Nbm</span>
+                        </div>
+                        <div class="f-main-header__inputs f-main-header__check-select">
+                            <label  class="f-main-header__label f-main-header__label-checkbox" for="checkbox-filtre3">
+                                <input class="f-main-header__bottom-checkbox" type="checkbox" id="checkbox-filtre3" checked>Filtre
+                            </label>
+                            <span class="f-main-header__bottom-nbm f-main-header__bottom-nbm-12">12</span>
+                            <select class="f-main-header__bottom-select" name="" id="">
+                                <option value="select">Select</option>
+                                <option value="select">Select</option>
+                                <option value="select">Select</option>
+                                <option value="select">Select</option>
+                            </select>
+                        </div>
+                    </form>
+                    <div class="f-main-header__applied-filters">
+                        <p class="f-main-header__applied-results">Applied filtres:</p>
+                        <span class="f-main-header__applied-result">Selected Filtre</span>
+                        <span class="f-main-header__applied-result">Selected Filtre</span>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
