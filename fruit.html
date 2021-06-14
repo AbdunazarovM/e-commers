@@ -254,13 +254,13 @@
                             <label  class="f-main-header__label f-main-header__label-checkbox" for="checkbox-filtre1">
                                 <input class="f-main-header__bottom-checkbox" type="checkbox" id="checkbox-filtre1">Filtre
                             </label>
-                            <span class="f-main-header__bottom-nbm">Nbm</span>
+                            
                         </div>
                         <div class="f-main-header__inputs f-main-header__checkbox">
                             <label  class="f-main-header__label f-main-header__label-checkbox" for="checkbox-filtre2">
                                 <input class="f-main-header__bottom-checkbox" type="checkbox" id="checkbox-filtre2">Filtre
                             </label>
-                            <span class="f-main-header__bottom-nbm">Nbm</span>
+                            
                         </div>
                         <div class="f-main-header__inputs f-main-header__check-select">
                             <label  class="f-main-header__label f-main-header__label-checkbox" for="checkbox-filtre3">
@@ -283,6 +283,111 @@
                 </div>
             </div>
         </section>
+
+
+        <article class="sidebar">
+            <div class="sidebar__container container">
+                <div class="categorie">
+                    <h2 class="sidebar__title">Categories</h2>
+                    <ul class="categorie__list">
+                        <li class="categorie__item">
+                            <a href="" class="categorie__link">Category name</a>
+                            <span class="categorie__number">320</span>
+                        </li>
+
+                        <li class="categorie__item">
+                            <a href="" class="categorie__link">Category name</a>
+                            <span class="categorie__number">112</span>
+                        </li>
+
+                        <li class="categorie__item">
+                            <a href="" class="categorie__link">Category name</a>
+                            <span class="categorie__number">32</span>
+                        </li>
+
+                        <li class="categorie__item">
+                            <a href="" class="categorie__link">Category name</a>
+                            <span class="categorie__number">48</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <section class="brands">
+                    <h2 class="sidebar__title">Brands</h2>
+                    <form class="sidebar__form" action="get">
+                            <label  class="brands__label" for="checkbox-filtre4">
+                                <input class="sidebar__checkbox" name="filter-products" type="checkbox" id="checkbox-filtre4">Filtre by brand item
+                            </label>
+
+                            <label  class="brands__label" for="checkbox-filtre5">
+                                <input class="sidebar__checkbox" name="filter-products" type="checkbox" id="checkbox-filtre5" checked>Filtre by brand item
+                            </label>
+
+                            <label  class="brands__label" for="checkbox-filtre6">
+                                <input class="sidebar__checkbox" name="filter-products" type="checkbox" id="checkbox-filtre6" checked>Filtre by brand item
+                            </label>
+
+                            <label  class="brands__label" for="checkbox-filtre7">
+                                <input class="sidebar__checkbox" name="filter-products" type="checkbox" id="checkbox-filtre7">Filtre by brand item
+                            </label>
+
+                            <label  class="brands__label" for="checkbox-filtre8">
+                                <input class="sidebar__checkbox" name="filter-products" type="checkbox" id="checkbox-filtre8">Filtre by brand item
+                            </label>
+                    </form>
+                </section>
+
+                <section class="rating">
+                    <h2 class="sidebar__title">Rating</h2>
+                    <form class="sidebar__form" action="get">
+                            <label  class="rating__label rating-star5" for="filter-star5">
+                                <input class="sidebar__checkbox"  name="rating-stars" type="checkbox" id="filter-star5">
+                            </label>
+
+                            <label  class="rating__label rating-star4" for="filter-star4">
+                                <input class="sidebar__checkbox"  name="rating-stars" type="checkbox" id="filter-star4" checked>
+                            </label>
+
+                            <label  class="rating__label rating-star3" for="filter-star3">
+                                <input class="sidebar__checkbox"  name="rating-stars" type="checkbox" id="filter-star3">
+                            </label>
+
+                            <label  class="rating__label rating-star2" for="filter-star2">
+                                <input class="sidebar__checkbox"  name="rating-stars" type="checkbox" id="filter-star2">
+                            </label>
+
+                            <label  class="rating__label rating-star1" for="filter-star1">
+                                <input class="sidebar__checkbox"  name="rating-stars" type="checkbox" id="filter-star1">
+                            </label>
+                    </form>
+                </section>
+
+                <section class="price">
+                    <h2 class="sidebar__title">Price</h2>
+                    <section class="range-slider">
+                        <span class="rangeValues"></span>
+                        <input value="10" min="0" max="100" step="1" type="range">
+                        <input value="50" min="0" max="100" step="1" type="range">
+                        
+                    </section>
+                    <div class="rangechanger">
+                        <div class="rangetext">
+                            <label for="rangemin">Min</label>
+                            <input class="minRange" type="text" name="renagemin" id="rangemin">
+                        </div>
+                        <div class="rangetext">
+                            <label for="rangemax">Max</label>
+                            <input class="minRange" type="text" name="renagemin" id="rangemax">
+                        </div>
+                    </div>
+                    <div class="range-buttons">
+                        <button class="range-btn">Apply</button>
+                        <button class="reset-btn">Reset</button>
+                    </div>
+                </section>
+            </div>
+        </article>
+
     </main>
 
 
@@ -361,5 +466,36 @@
         </div>
     </footer>
 
+
+    <script>
+                function getVals(){
+        // Get slider values
+        var parent = this.parentNode;
+        var slides = parent.getElementsByTagName("input");
+            var slide1 = parseFloat( slides[0].value );
+            var slide2 = parseFloat( slides[1].value );
+        // Neither slider will clip the other, so make sure we determine which is larger
+        if( slide1 > slide2 ){ var tmp = slide2; slide2 = slide1; slide1 = tmp; }
+        
+        document.getElementById('rangemin').value=slide1;
+        document.getElementById('rangemax').value=slide2;
+        }
+
+        window.onload = function(){
+        // Initialize Sliders
+        var sliderSections = document.getElementsByClassName("range-slider");
+            for( var x = 0; x < sliderSections.length; x++ ){
+                var sliders = sliderSections[x].getElementsByTagName("input");
+                for( var y = 0; y < sliders.length; y++ ){
+                if( sliders[y].type ==="range" ){
+                    sliders[y].oninput = getVals;
+                    // Manually trigger event first time to display values
+                    sliders[y].oninput();
+                }
+                }
+            }
+        }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
 </html>
