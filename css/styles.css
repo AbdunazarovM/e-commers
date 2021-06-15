@@ -420,7 +420,7 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
   }
   
-  .site-header__category{
+  .site-header__categories{
     width: 350px;
     margin: 0 auto;
     margin-bottom: 16px;
@@ -1514,16 +1514,14 @@ h1, h2, h3, h4, h5, h6 {
 .f-main-main__container{
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 /* SIDEBAR */
 /* CATEGORIES */
-.sidebar {
+.categorie {
   width: 268px;
   margin-right: 33px;
-}
-
-.categorie {
   margin-bottom: 48px;
 }
 
@@ -1571,6 +1569,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* BRANDS */
 .brands, .rating{
+  width: 268px;
+  margin-right: 33px;
   margin-bottom: 48px;
 }
 
@@ -1591,10 +1591,6 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* RATING */
-.rating{
-  margin-bottom: 48px;
-}
-
 .rating__label{
   display: flex;
   width: 110px;
@@ -1629,6 +1625,11 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* PRICE */
+.price{
+  width: 268px;
+  margin-right: 33px;
+}
+
 .rangechanger{
   margin-top: 16px;
   display: flex;
@@ -1812,9 +1813,6 @@ border: 0;
   color: var(--green-color);
 }
 
-.product-list__buy {
-}
-
 .product-list__cost-infos {
   margin-bottom: 26px;
 }
@@ -1937,4 +1935,88 @@ border: 0;
 
 .more-product__show::after {
   transform: rotate(90deg);
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1200px) {
+  .product-list__card{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product-list__card-img{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 935px) {
+  .f-main-main__container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sidebar {
+    display: flex;
+    max-width: 605px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+    margin-left: 40px;
+  }
+
+}
+
+@media screen and (max-width: 675px) {
+  
+  .sidebar {
+    flex-direction: column;
+    margin-left: unset;
+  }
+
+  .categorie, .brands, .rating, .price{
+    margin-right: unset;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  
+  .sidebar {
+    flex-direction: column;
+    margin-left: unset;
+  }
+
+  .product-list__buy-info{
+    flex-direction: column;
+  }
+
+  .product-list__info{
+    margin-right: unset;
+  }
+
+  .product-list__information{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .categorie, .brands, .rating, .price{
+    width: 225px;
+  }
+
+  .more-product{
+    flex-direction: column;
+  }
+
+  .more-product__pages{
+    order: 1;
+  }
+
+  .f-main-header__middle-link{
+    order: -1;
+    margin-bottom: 24px;
+  }
+
+  .more-product__show{
+    margin-bottom: 24px;
+  }
 }
