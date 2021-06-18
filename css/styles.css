@@ -871,6 +871,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 18px;
   line-height: 1.5;
   font-weight: 600;
+  white-space: nowrap;
 }
 
 .our-says__button {
@@ -969,9 +970,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .posts__dinner {
-  max-width: 470px;
-  margin-right: 30px;
+  max-width: 569px;
   position: relative;
+}
+
+.posts__dinner:not(:last-child){
+  margin-right: 30px;
 }
 
 .posts__dinner-tips{
@@ -2363,6 +2367,10 @@ tr:nth-child(even){
     margin-right: 0;
     margin-bottom: 32px;
   }
+
+  .posts__dinner-img{
+    max-width: 400px;
+  }
 }
 
 @media screen and (max-width: 470px){
@@ -2395,6 +2403,22 @@ tr:nth-child(even){
   .carrots__product-prace{
     align-items: center;
     margin-right: 0;
+  }
+
+  .posts__dinner:not(:last-child) {
+    margin-right: 0;
+}
+
+  .posts__dinner-img{
+    max-width: 250px;
+  }
+
+  .posts__vegetable-photo{
+    max-width: 230px;
+  }
+
+  .posts__dinner-title{
+    font-size: 15px;
   }
 }
 
@@ -2463,3 +2487,5 @@ tr:nth-child(even){
       width: 40%;
     }
 }
+
+/* BLOG PAGE */
