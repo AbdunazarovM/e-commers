@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0", maximum-scale=1.0, user-scalable=0>
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <title>E-commerce project</title>
+</head>
+<body>
+    <header class="header-container container">
+        <div class="top-header">
+            <div class="top-header-contact">
+                <span class="menu-text top-header-text top-contact">Chat with us</span>
+                <span class="top-header-text">+420 336 775 664</span>
+                <span class="top-header-text">info@freshnesecom.com</span>
+            </div>
+            <div class="top-header-menu">
+                <ul class="top-header-items">
+                    <li class="top-header-text"><a href="#" class="menu-text top-header-link links">Blog</a></li>
+                    <li class="top-header-text"><a href="#" class="menu-text top-header-link links">About Us</a></li>
+                    <li class="top-header-text"><a href="#" class="menu-text top-header-link links">Careers</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-header">
+            <a class="logo-link"><img class="logo-img" src="img/site-header-logo.svg" alt="header logo"  width="177" height="50"></a>
+            <form class="header-form" action="POST" >
+                <select name="category" id="category" class="category-select">
+                    <option value="all">All Categories</option>
+                    <option value="tech">technology</option>
+                    <option value="fashion">Fashion</option>
+                </select>
+                <input class="search" type="text" name="search" id="search" placeholder="Search Products, categories...">
+            </form>
+            <div class="header-cart">
+                <button class="account-btn btn"><img src="img/user-account.svg" alt="user icon" width="24" height="24"></button>
+                <button class="cart-btn btn"><img src="img/pocket.svg" alt="cart icon" width="24" height="24"></button>
+            </div>
+        </div>
+    </header>
+    <nav class="main-navbar container">
+        <ul class="header-navbar">
+            <li class="nav-items"><a href="" class="nav-link links">Bakery</a>
+                <ul class="dropdown">
+                    <li class="dropdown-items">Dropdown</li>
+                    <li class="dropdown-items">Keks</li>
+                    <li class="dropdown-items">Pirojniy</li>
+                    <li class="dropdown-items">Kulcha</li>
+                </ul>
+            </li>
+            <li class="nav-items"><a href="" class="nav-link links">Fruit and vegetables</a>
+                <ul class="dropdown">
+                    <li class="dropdown-items">Bread</li>
+                    <li class="dropdown-items">Keks</li>
+                    <li class="dropdown-items">Pirojniy</li>
+                    <li class="dropdown-items">Kulcha</li>
+                </ul>
+            </li>
+            <li class="nav-items"><a href="" class="nav-link links">Meat and fish</a>
+                <ul class="dropdown">
+                    <li class="dropdown-items">Bread</li>
+                    <li class="dropdown-items">Keks</li>
+                    <li class="dropdown-items">Pirojniy</li>
+                    <li class="dropdown-items">Kulcha</li>
+                </ul>
+            </li>
+            <li class="nav-items"><a href="" class="nav-link links">Drinks</a>
+                <ul class="dropdown">
+                    <li class="dropdown-items">Bread</li>
+                    <li class="dropdown-items">Keks</li>
+                    <li class="dropdown-items">Pirojniy</li>
+                    <li class="dropdown-items">Kulcha</li>
+                </ul>
+            </li>
+            <li class="nav-items"><a href="" class="nav-link links">Kitchen</a>
+                <ul class="dropdown">
+                    <li class="dropdown-items">Bread</li>
+                    <li class="dropdown-items">Keks</li>
+                    <li class="dropdown-items">Pirojniy</li>
+                    <li class="dropdown-items">Kulcha</li>
+                </ul>
+            </li>
+            <li class="nav-items"><a href="" class="nav-link links">Special nutrition</a>
+                <ul class="dropdown">
+                    <li class="dropdown-items">Bread</li>
+                    <li class="dropdown-items">Keks</li>
+                    <li class="dropdown-items">Pirojniy</li>
+                    <li class="dropdown-items">Kulcha</li>
+                </ul>
+            </li>
+            <li class="nav-items"><a href="" class="nav-link links">Baby</a>
+                <ul class="dropdown">
+                    <li class="dropdown-items">Bread</li>
+                    <li class="dropdown-items">Keks</li>
+                    <li class="dropdown-items">Pirojniy</li>
+                    <li class="dropdown-items">Kulcha</li>
+                </ul>
+            </li>
+            <li class="nav-items"><a href="" class="nav-link links">Pharmacy</a>
+                <ul class="dropdown">
+                    <li class="dropdown-items">Bread</li>
+                    <li class="dropdown-items">Keks</li>
+                    <li class="dropdown-items">Pirojniy</li>
+                    <li class="dropdown-items">Kulcha</li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <main class="site-main">
+        <section class="page-filter-container container">
+            <div class="breadcrumbs">
+                <p class="bread-text">Homepage / <span class="active">Fruit and vegetables</span></p>
+            </div>
+            <div class="title-view">
+                <h1 class="page-title container">Fruit and vegetables</h1>
+                <div class="view-type">
+                    <a href="#" class="view-type-text active grid-type">Grid view</a>
+                    <a href="#" class="view-type-text list-type">List view</a>
+                    <p class="results view-type-text"><span class="result-count">117</span> Products</p>
+                </div>
+            </div>
+            <form class="main-filter" action="POST">
+                <div class="filter-btn radio-sec">
+                    <input class="filter-radio" type="radio" name="filter-radio" id="filter-radio1" value="Filtre text">
+                    <label class="filter-lbl" for="filter-radio1">Filtre text</label>
+                    <input class="filter-radio" type="radio" name="filter-radio" id="filter-radio2" value="Filtre text" checked>
+                    <label class="filter-lbl" for="filter-radio2">Filtre text</label>
+                </div>
+                <div class="filter-btn checksec">
+                    <input type="checkbox" name="filter-check" id="filter-check1" value="Filtre">
+                    <label class="filter-lbl" for="filter-check1">Filtre text</label>
+                    <span class="check-span">Nbm</span>
+                </div>
+                <div class="filter-btn checksec">
+                    <input type="checkbox" name="filter-check" id="filter-check2" value="Filtre">
+                    <label class="filter-lbl" for="filter-check2">Filtre text</label>
+                    <span class="check-span">Nbm</span>
+                </div>
+                <div class="filter-btn checksec">
+                    <input type="checkbox" name="filter-check" id="filter-check3" value="Filtre" checked>
+                    <label class="filter-lbl" for="filter-check3">Filtre text</label>
+                    <span class="check-span">12</span>
+                    <select name="category" id="category" class="filter-select">
+                        <option value="all">Select</option>
+                        <option value="tech">technology</option>
+                        <option value="fashion">Fashion</option>
+                    </select>
+                </div>
+
+            </form>
+            <div class="applied-filters">
+                <p class="applied-text">Applied filter: <span class="selected-item">Selected Filtre</span><span class="selected-item">Selected Filtre</span></p>
+            </div>
+    </section>
+    <section class="products">
+        <div class="products-container container">
+            <div class="products-sidebar">
+                <div class="sidebar-sections">
+                    <h3 class="most-title side-title">Categories</h3>
+                    <div class="category-name-count">
+                        <p class="side-category-name">Category name</p><span class="category-count">320</span> 
+                    </div>
+                    <div class="category-name-count">
+                        <p class="side-category-name">Category name</p><span class="category-count">112</span> 
+                    </div>
+                    <div class="category-name-count">
+                        <p class="side-category-name">Category name</p><span class="category-count">32</span> 
+                    </div>
+                    <div class="category-name-count">
+                        <p class="side-category-name">Category name</p><span class="category-count">48</span> 
+                    </div>
+                </div>
+                <div class="sidebar-sections">
+                    <h3 class="most-title side-title">Brands</h3>
+                    <div class="sidecheck">
+                        <input type="checkbox" name="filter-check" id="filter-brand1" value="Filtre">
+                        <label class="filter-lbl" for="filter-brand1">Filtre by brand item</label>
+                    </div>
+                    <div class="sidecheck">
+                        <input type="checkbox" name="filter-check" id="filter-brand2" value="Filtre">
+                        <label class="filter-lbl" for="filter-brand2">Filtre by brand item</label>
+                    </div>
+                    <div class="sidecheck">
+                        <input type="checkbox" name="filter-check" id="filter-brand3" value="Filtre">
+                        <label class="filter-lbl" for="filter-brand3">Filtre by brand item</label>
+                    </div>
+                    <div class="sidecheck">
+                        <input type="checkbox" name="filter-check" id="filter-brand4" value="Filtre">
+                        <label class="filter-lbl" for="filter-brand4">Filtre by brand item</label>
+                    </div>
+                    <div class="sidecheck">
+                        <input type="checkbox" name="filter-check" id="filter-brand5" value="Filtre">
+                        <label class="filter-lbl" for="filter-brand5">Filtre by brand item</label>
+                    </div>
+                </div>
+                <div class="sidebar-sections">
+                    <h3 class="most-title side-title">Rating</h3>
+                    <div class="sidecheck">
+                        <input type="checkbox" name="filter-check" id="filter-rating5" value="Filtre">
+                        <label class="filter-lbl" for="filter-rating5"><img src="img/5star.svg" alt="" class="rating-star"></label>
+                    </div>
+                    <div class="sidecheck">
+                        <input type="checkbox" name="filter-check" id="filter-rating4" value="Filtre">
+                        <label class="filter-lbl" for="filter-rating4"><img src="img/4star.svg" alt="" class="rating-star"></label>
+                    </div>
+                    <div class="sidecheck">
+                        <input type="checkbox" name="filter-check" id="filter-rating3" value="Filtre">
+                        <label class="filter-lbl" for="filter-rating3"><img src="img/3star.svg" alt="" class="rating-star"></label>
+                    </div>
+                    <div class="sidecheck">
+                        <input type="checkbox" name="filter-check" id="filter-rating2" value="Filtre">
+                        <label class="filter-lbl" for="filter-rating2"><img src="img/2star.svg" alt="" class="rating-star"></label>
+                    </div>
+                    <div class="sidecheck">
+                        <input type="checkbox" name="filter-check" id="filter-rating1" value="Filtre">
+                        <label class="filter-lbl" for="filter-rating1"><img src="img/1star.svg" alt="" class="rating-star"></label>
+                    </div>
+                </div>
+                <div class="sidebar-sections">
+                    <h3 class="most-title side-title">Rating</h3>
+                    <section class="range-slider">
+                        <span class="rangeValues"></span>
+                        <input value="10" min="0" max="100" step="10" type="range">
+                        <input value="50" min="0" max="100" step="10" type="range">
+                        
+                    </section>
+                    <div class="rangechanger">
+                        <div class="rangetext">
+                            <label for="rangemin">Min</label>
+                            <input class="minRange" type="text" name="renagemin" id="rangemin">
+                        </div>
+                        <div class="rangetext">
+                            <label for="rangemax">Max</label>
+                            <input class="minRange" type="text" name="renagemin" id="rangemax">
+                        </div>
+                    </div>
+                    <div class="range-buttons">
+                        <button class="range-btn">Apply</button>
+                        <button class="reset-btn">Reset</button>
+                    </div>
+                </div>
+            </div>
+            <div class="products-list">
+                <div class="product-list-card">
+                    <img src="img/product-image.png" alt="product image" class="product-img">
+                    <div class="full-detail">
+                        <div class="product-description">
+                            <h4 class="product-title">Product title</h4>
+                            <p class="product-desc">Space for a small product description </p>
+                            <img src="/img/product-rating.svg" alt="product rating" class="product-rating-img">
+                            <div class="extra-desc">
+                                <div class="extra-desc-item">
+                                    <p class="extra-desc-name">Freshness</p>
+                                    <p class="extra-desc-full"><span class="extra-desc-label">New</span> (Extra Fresh)</p>
+                                </div>
+                                <div class="extra-desc-item">
+                                    <p class="extra-desc-name">Farm</p>
+                                    <p class="extra-desc-full">Grocery Tarm Fields</p>
+                                </div>
+                                <div class="extra-desc-item">
+                                    <p class="extra-desc-name">Delivery</p>
+                                    <p class="extra-desc-full">Europe</p>
+                                </div>
+                                <div class="extra-desc-item">
+                                    <p class="extra-desc-name">Stock</p>
+                                    <span class="extra-desc-label">320 pcs</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-buy">
+                            <h4 class="product-title">36.99 USD</h4>
+                            <p class="product-discount">48.56</p>
+                            <p class="shipping-text">Free Shipping</p>
+                            <p class="delivery-text">delivery in 1 day</p>
+                            <button class="detail-btn product-btn">Product Detail</button>
+                            <button class="add-btn">Add to wishlist</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-list-card">
+                    <img src="img/product-image.png" alt="product image" class="product-img">
+                    <div class="full-detail">
+                        <div class="product-description">
+                            <h4 class="product-title">Product title</h4>
+                            <p class="product-desc">Space for a small product description </p>
+                            <img src="/img/product-rating.svg" alt="product rating" class="product-rating-img">
+                            <div class="extra-desc">
+                                <div class="extra-desc-item">
+                                    <p class="extra-desc-name">Freshness</p>
+                                    <p class="extra-desc-full"><span class="extra-desc-label">New</span> (Extra Fresh)</p>
+                                </div>
+                                <div class="extra-desc-item">
+                                    <p class="extra-desc-name">Farm</p>
+                                    <p class="extra-desc-full">Grocery Tarm Fields</p>
+                                </div>
+                                <div class="extra-desc-item">
+                                    <p class="extra-desc-name">Delivery</p>
+                                    <p class="extra-desc-full">Europe</p>
+                                </div>
+                                <div class="extra-desc-item">
+                                    <p class="extra-desc-name">Stock</p>
+                                    <span class="extra-desc-label">320 pcs</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-buy">
+                            <h4 class="product-title">36.99 USD</h4>
+                            <p class="product-discount">48.56</p>
+                            <p class="shipping-text">Free Shipping</p>
+                            <p class="delivery-text">delivery in 1 day</p>
+                            <button class="detail-btn product-btn">Product Detail</button>
+                            <button class="add-btn">Add to wishlist</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-list-card">
+                    <img src="img/product-image.png" alt="product image" class="product-img">
+                    <div class="full-detail">
+                        <div class="product-description">
+                            <h4 class="product-title">Product title</h4>
+                            <p class="product-desc">Space for a small product description </p>
+                            <img src="/img/product-rating.svg" alt="product rating" class="product-rating-img">
+                            <div class="extra-desc">
+                                <div class="extra-desc-item">
+                                    <p class="extra-desc-name">Freshness</p>
+                                    <p class="extra-desc-full"><span class="extra-desc-label">New</span> (Extra Fresh)</p>
+                                </div>
+                                <div class="extra-desc-item">
+                                    <p class="extra-desc-name">Farm</p>
+                                    <p class="extra-desc-full">Grocery Tarm Fields</p>
+                                </div>
+                                <div class="extra-desc-item">
+                                    <p class="extra-desc-name">Delivery</p>
+                                    <p class="extra-desc-full">Europe</p>
+                                </div>
+                                <div class="extra-desc-item">
+                                    <p class="extra-desc-name">Stock</p>
+                                    <span class="extra-desc-label">320 pcs</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-buy">
+                            <h4 class="product-title">36.99 USD</h4>
+                            <p class="product-discount">48.56</p>
+                            <p class="shipping-text">Free Shipping</p>
+                            <p class="delivery-text">delivery in 1 day</p>
+                            <button class="detail-btn product-btn">Product Detail</button>
+                            <button class="add-btn">Add to wishlist</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-list-card">
+                    <img src="img/product-image.png" alt="product image" class="product-img">
+                    <div class="full-detail">
+                        <div class="product-description">
+                            <h4 class="product-title">Product title</h4>
+                            <p class="product-desc">Space for a small product description </p>
+                            <img src="/img/product-rating.svg" alt="product rating" class="product-rating-img">
+                            <div class="extra-desc">
+                                <div class="extra-desc-item">
+                                    <p class="extra-desc-name">Freshness</p>
+                                    <p class="extra-desc-full"><span class="extra-desc-label">New</span> (Extra Fresh)</p>
+                                </div>
+                                <div class="extra-desc-item">
+                                    <p class="extra-desc-name">Farm</p>
+                                    <p class="extra-desc-full">Grocery Tarm Fields</p>
+                                </div>
+                                <div class="extra-desc-item">
+                                    <p class="extra-desc-name">Delivery</p>
+                                    <p class="extra-desc-full">Europe</p>
+                                </div>
+                                <div class="extra-desc-item">
+                                    <p class="extra-desc-name">Stock</p>
+                                    <span class="extra-desc-label">320 pcs</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-buy">
+                            <h4 class="product-title">36.99 USD</h4>
+                            <p class="product-discount">48.56</p>
+                            <p class="shipping-text">Free Shipping</p>
+                            <p class="delivery-text">delivery in 1 day</p>
+                            <button class="detail-btn product-btn">Product Detail</button>
+                            <button class="add-btn">Add to wishlist</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-list-card">
+                    <img src="img/product-image.png" alt="product image" class="product-img">
+                    <div class="full-detail">
+                        <div class="product-description">
+                            <h4 class="product-title">Product title</h4>
+                            <p class="product-desc">Space for a small product description </p>
+                            <img src="/img/product-rating.svg" alt="product rating" class="product-rating-img">
+                            <div class="extra-desc">
+                                <div class="extra-desc-item">
+                                    <p class="extra-desc-name">Freshness</p>
+                                    <p class="extra-desc-full"><span class="extra-desc-label">New</span> (Extra Fresh)</p>
+                                </div>
+                                <div class="extra-desc-item">
+                                    <p class="extra-desc-name">Farm</p>
+                                    <p class="extra-desc-full">Grocery Tarm Fields</p>
+                                </div>
+                                <div class="extra-desc-item">
+                                    <p class="extra-desc-name">Delivery</p>
+                                    <p class="extra-desc-full">Europe</p>
+                                </div>
+                                <div class="extra-desc-item">
+                                    <p class="extra-desc-name">Stock</p>
+                                    <span class="extra-desc-label">320 pcs</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-buy">
+                            <h4 class="product-title">36.99 USD</h4>
+                            <p class="product-discount">48.56</p>
+                            <p class="shipping-text">Free Shipping</p>
+                            <p class="delivery-text">delivery in 1 day</p>
+                            <button class="detail-btn product-btn">Product Detail</button>
+                            <button class="add-btn">Add to wishlist</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="product-nav">
+        <div class="product-nav-container container">
+            <div class="nav-prev">
+                <span class="page-text">Page</span>
+                <span class="page-count">1</span>
+                <span class="page-count">2</span>
+                <span class="page-count page-active">3</span>
+                <span class="page-count">4</span>
+            </div>
+            <button class="show-more-btn product-btn">Show more products</button>
+            <div class="all-products-count">
+                <span class="product-num">336</span>
+                <span class="page-text">Products</span>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container container">
+            <div class="footer-menu">
+                <h3 class="menu-title">Get in touch</h3>
+                <ul class="footer-item"> 
+                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">About us</a></li>
+                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Careers</a></li>
+                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Press Releases</a></li>
+                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-menu">
+                <h3 class="menu-title">Connections</h3>
+                <ul class="footer-item">
+                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Facebook</a></li>
+                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Twitter</a></li>
+                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Instagram</a></li>
+                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Youtube</a></li>
+                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Linekdin</a></li>
+                </ul>
+            </div>
+            <div class="footer-menu">
+                <h3 class="menu-title">Earnings</h3>
+                <ul class="footer-item"> 
+                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Become an Affiliate</a></li>
+                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Advertise your product</a></li>
+                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Sell on Market</a></li>
+                </ul>
+            </div>
+            <div class="footer-menu">
+                <h3 class="menu-title">Account</h3>
+                <ul class="footer-item"> 
+                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Your account</a></li>
+                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Returns Centre</a></li>
+                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">100 % purchase protection</a></li>
+                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Chat with us</a></li>
+                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Help</a></li>
+                </ul>
+            </div>
+        </div>
+        <section class="tags container">
+            <h3 class="section-title">Product tags</h3>
+            <ul class="tags-list">
+                <ul class="tags-item"><a href="#" class="tags-link links">Beans</a></ul>
+                <ul class="tags-item"><a href="#" class="tags-link links">Carrots</a></ul>
+                <ul class="tags-item"><a href="#" class="tags-link links">Apples</a></ul>
+                <ul class="tags-item"><a href="#" class="tags-link links">Garlic</a></ul>
+                <ul class="tags-item"><a href="#" class="tags-link links">Mushrooms</a></ul>
+                <ul class="tags-item"><a href="#" class="tags-link links">Tomatoes</a></ul>
+                <ul class="tags-item"><a href="#" class="tags-link links">Chilli peppers</a></ul>
+                <ul class="tags-item"><a href="#" class="tags-link links">Brocolli</a></ul>
+                <ul class="tags-item"><a href="#" class="tags-link links">Watermelons</a></ul>
+                <ul class="tags-item"><a href="#" class="tags-link links">Oranges</a></ul>
+                <ul class="tags-item"><a href="#" class="tags-link links">Bananas</a></ul>
+                <ul class="tags-item"><a href="#" class="tags-link links">Grapes</a></ul>
+                <ul class="tags-item"><a href="#" class="tags-link links">Cherries</a></ul>
+                <ul class="tags-item"><a href="#" class="tags-link links">Meat</a></ul>
+                <ul class="tags-item"><a href="#" class="tags-link links">Seo tag</a></ul>
+                <ul class="tags-item"><a href="#" class="tags-link links">Fish</a></ul>
+                <ul class="tags-item"><a href="#" class="tags-link links">Seo tag</a></ul>
+                <ul class="tags-item"><a href="#" class="tags-link links">Fresh food</a></ul>
+                <ul class="tags-item"><a href="#" class="tags-link links">Lemons</a></ul>
+            </ul>
+            <p class="copyright">Copyright © 2020 petrbilek.com</p>
+        </section>
+    </footer>
+    <script>
+        function getVals(){
+  // Get slider values
+  var parent = this.parentNode;
+  var slides = parent.getElementsByTagName("input");
+    var slide1 = parseFloat( slides[0].value );
+    var slide2 = parseFloat( slides[1].value );
+  // Neither slider will clip the other, so make sure we determine which is larger
+  if( slide1 > slide2 ){ var tmp = slide2; slide2 = slide1; slide1 = tmp; }
+  
+  document.getElementById('rangemin').value=slide1;
+  document.getElementById('rangemax').value=slide2;
+}
+
+window.onload = function(){
+  // Initialize Sliders
+  var sliderSections = document.getElementsByClassName("range-slider");
+      for( var x = 0; x < sliderSections.length; x++ ){
+        var sliders = sliderSections[x].getElementsByTagName("input");
+        for( var y = 0; y < sliders.length; y++ ){
+          if( sliders[y].type ==="range" ){
+            sliders[y].oninput = getVals;
+            // Manually trigger event first time to display values
+            sliders[y].oninput();
+          }
+        }
+      }
+}
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+</html>
