@@ -58,7 +58,6 @@ html{
     box-sizing: inherit;
 }
 body{
-    /* background-color: var(--gray-color); */
     font-family: "Poppins", "Arial", sans-serif;
     font-size: 15px;
     line-height: 22px;
@@ -81,14 +80,12 @@ body{
     height: 1px;
     margin: -1px;
     border: 0;
-    padding; 0;
+    padding: 0;
     clip: rect(0 0 0 0);
     overflow: hidden;  
 }
+
 /* HEADER */
-.header-container{
-    
-}
 .top-header{
     padding: 16px 0;
     margin-bottom: 16px;
@@ -638,7 +635,6 @@ body{
     margin-right: 32px;
 }
 .blog-bg-img{
-    position: absoute;
     z-index: -1;
 }
 .category-name{
