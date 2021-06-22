@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0", maximum-scale=1.0, user-scalable=0>
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <title>E-commerce project</title>
+</head>
+<body>
+    <header class="header-container container">
+        <div class="top-header">
+            <div class="top-header-contact">
+                <span class="menu-text top-header-text top-contact">Chat with us</span>
+                <span class="top-header-text">+420 336 775 664</span>
+                <span class="top-header-text">info@freshnesecom.com</span>
+            </div>
+            <div class="top-header-menu">
+                <ul class="top-header-items">
+                    <li class="top-header-text"><a href="#" class="menu-text top-header-link links">Blog</a></li>
+                    <li class="top-header-text"><a href="#" class="menu-text top-header-link links">About Us</a></li>
+                    <li class="top-header-text"><a href="#" class="menu-text top-header-link links">Careers</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-header">
+            <a class="logo-link"><img class="logo-img" src="img/site-header-logo.svg" alt="header logo"  width="177" height="50"></a>
+            <form class="header-form" action="POST" >
+                <select name="category" id="category" class="category-select">
+                    <option value="all">All Categories</option>
+                    <option value="tech">technology</option>
+                    <option value="fashion">Fashion</option>
+                </select>
+                <input class="search" type="text" name="search" id="search" placeholder="Search Products, categories...">
+            </form>
+            <div class="header-cart">
+                <button class="account-btn"><img src="img/user-account.svg" alt="user icon" width="24" height="24"></button>
+                <button class="cart-btn"><img src="img/pocket.svg" alt="cart icon" width="24" height="24"></button>
+            </div>
+        </div>
+    </header>
+    <nav class="main-navbar container">
+        <ul class="header-navbar">
+            <li class="nav-items"><a href="" class="nav-link links">Bakery</a>
+                <ul class="dropdown">
+                    <li class="dropdown-items">Dropdown</li>
+                    <li class="dropdown-items">Keks</li>
+                    <li class="dropdown-items">Pirojniy</li>
+                    <li class="dropdown-items">Kulcha</li>
+                </ul>
+            </li>
+            <li class="nav-items"><a href="" class="nav-link links">Fruit and vegetables</a>
+                <ul class="dropdown">
+                    <li class="dropdown-items">Bread</li>
+                    <li class="dropdown-items">Keks</li>
+                    <li class="dropdown-items">Pirojniy</li>
+                    <li class="dropdown-items">Kulcha</li>
+                </ul>
+            </li>
+            <li class="nav-items"><a href="" class="nav-link links">Meat and fish</a>
+                <ul class="dropdown">
+                    <li class="dropdown-items">Bread</li>
+                    <li class="dropdown-items">Keks</li>
+                    <li class="dropdown-items">Pirojniy</li>
+                    <li class="dropdown-items">Kulcha</li>
+                </ul>
+            </li>
+            <li class="nav-items"><a href="" class="nav-link links">Drinks</a>
+                <ul class="dropdown">
+                    <li class="dropdown-items">Bread</li>
+                    <li class="dropdown-items">Keks</li>
+                    <li class="dropdown-items">Pirojniy</li>
+                    <li class="dropdown-items">Kulcha</li>
+                </ul>
+            </li>
+            <li class="nav-items"><a href="" class="nav-link links">Kitchen</a>
+                <ul class="dropdown">
+                    <li class="dropdown-items">Bread</li>
+                    <li class="dropdown-items">Keks</li>
+                    <li class="dropdown-items">Pirojniy</li>
+                    <li class="dropdown-items">Kulcha</li>
+                </ul>
+            </li>
+            <li class="nav-items"><a href="" class="nav-link links">Special nutrition</a>
+                <ul class="dropdown">
+                    <li class="dropdown-items">Bread</li>
+                    <li class="dropdown-items">Keks</li>
+                    <li class="dropdown-items">Pirojniy</li>
+                    <li class="dropdown-items">Kulcha</li>
+                </ul>
+            </li>
+            <li class="nav-items"><a href="" class="nav-link links">Baby</a>
+                <ul class="dropdown">
+                    <li class="dropdown-items">Bread</li>
+                    <li class="dropdown-items">Keks</li>
+                    <li class="dropdown-items">Pirojniy</li>
+                    <li class="dropdown-items">Kulcha</li>
+                </ul>
+            </li>
+            <li class="nav-items"><a href="" class="nav-link links">Pharmacy</a>
+                <ul class="dropdown">
+                    <li class="dropdown-items">Bread</li>
+                    <li class="dropdown-items">Keks</li>
+                    <li class="dropdown-items">Pirojniy</li>
+                    <li class="dropdown-items">Kulcha</li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <main class="site-main">
+        <div class="breadcrumbs container">
+            <p class="bread-text">Homepage / Fruit and vegetables / <span class="active">Carrots from Tomissy Farm</span></p>
+        </div>
+        <div class="product-page-main container">
+            <div class="product-images-list">
+                <img src="/img/product-image-large.png" alt="" class="product-image featured-image" width="569" height="437">
+                <div class="additional-product-images">
+                    <img src="/img/product-image-large.png" alt="" class="product-image add-product-image" width="569" height="437">
+                    <img src="/img/product-image-large.png" alt="" class="product-image add-product-image" width="569" height="437">
+                </div>
+            </div>
+            <div class="product-page-info">
+                <h1 class="page-title">Carrots from Tomissy Farm</h1>
+                <div class="rating-review">
+                    <img src="img/4star.svg" alt="rating image" class="rating-img">
+                    <span class="review-text">(1 customer review)</span>
+                </div>
+                <p class="product-page-desc">Carrots from Tomissy Farm are one of the best on the market. Tomisso and his family are giving a full love to his Bio products. Tomisso’s carrots are growing on the fields naturally.</p>
+                <div class="specification-section">
+                    <div class="spec-info">
+                        <div class="spec-items">
+                            <p class="spec-name spec-text">SKU:</p>
+                            <p class="spec-detail spec-text">76645</p>
+                        </div>
+                        <div class="spec-items">
+                            <p class="spec-name spec-text">Category:</p>
+                            <p class="spec-detail spec-text"><a href="#" class="spec-link feature">Vegetables</a></p>
+                        </div>
+                        <div class="spec-items">
+                            <p class="spec-name spec-text">Stock:</p>
+                            <p class="spec-detail spec-text"><a href="#" class="spec-link">In Stock</a></p>
+                        </div>
+                        <div class="spec-items">
+                            <p class="spec-name spec-text">Farm:</p>
+                            <p class="spec-detail spec-text">Grocery Tarm Fields</p>
+                        </div>
+                    </div>
+                    <div class="spec-info spec-info-delivery">
+                        <div class="spec-items">
+                            <p class="spec-name spec-text">Freshness:</p>
+                            <p class="spec-detail spec-text">1 days old</p>
+                        </div>
+                        <div class="spec-items">
+                            <p class="spec-name spec-text">Buy by:</p>
+                            <p class="spec-detail spec-text">pcs, kgs, box, pack</p>
+                        </div>
+                        <div class="spec-items">
+                            <p class="spec-name spec-text">Delivery:</p>
+                            <p class="spec-detail spec-text">in 2 days</p>
+                        </div>
+                        <div class="spec-items">
+                            <p class="spec-name spec-text">Delivery area:</p>
+                            <p class="spec-detail spec-text">Czech republic</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-cart-section">
+                    <div class="product-page-price-discount">
+                        <p class="product-page-price">36.23 USD</p>
+                        <p class="product-page-discount">48.56 USD</p>
+                    </div>
+                    <div class="cart-buttons">
+                        <div class="txt-select">
+                            <input class="qty-txtbox" type="text" name="qtytxt" id="qtytx" placeholder="1">
+                            <label for="qtytxt" class="visually-hidden"></label>
+                            <select class="measure-select" name="measure" id="measure">
+                                <option value="Pcs">Pcs</option>
+                                <option value="qty">Qty</option>
+                                <option value="gramm">Gramm</option>
+                            </select>
+                        </div>
+                        <buttton class="add-cart-btn">Add to cart</buttton>
+                    </div>
+                </div>
+                <div class="wishlist-compare">
+                    <button class="wishcom-btn wish-btn">Add to my wishlist</button>
+                    <button class="wishcom-btn comapre-btn">Compare</button>
+                </div>
+                <div class="product-page-tabs">
+                    <div class="tabs">
+                        <div class="tabs-item">
+                            <a href="#desc" class="tab-item">Description</a>
+                            <a href="#review" class="tab-item">Reviews</a>
+                            <a href="#questions" class="tab-item">Questions</a>
+                        </div>
+                        <div class="tabs_body">
+                            <div id="desc" class="tabs-content">
+                                <div class="tab-desc-block">
+                                    <p class="tab-desc-title">Origins</p>
+                                    <p class="tab-desc-text">We work hard to ensure that the fruit and vegetables we sell are fresh and high in quality. If we don’t grow them ourselves, we source them from carefully chosen suppliers, preferring to buy locally whenever possible.</p>
+                                </div>
+                                <div class="tab-desc-block">
+                                    <p class="tab-desc-title">How to cook</p>
+                                    <p class="tab-desc-text">From roasts, salads and soups to casseroles and cakes, Carrots will lend sweetness, texture and colour to an enormous number of recipes.</p>
+                                </div>
+                                <div class="tab-desc-block">
+                                    <p class="tab-desc-title">Full of Vitamins!</p>
+                                    <table id="vitamins-list">
+                                        <tr>
+                                          <th>Vitamins</th>
+                                          <th>Quantity</th>
+                                          <th>% DV</th>
+                                        </tr>
+                                        <tr>
+                                          <td>Vitamin A equiv.</td>
+                                          <td>735 μg</td>
+                                          <td>104 %</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Thiamine (B1)</td>
+                                          <td>0.066 mg</td>
+                                          <td>6 %</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Niacin (B3)</td>
+                                          <td>0.983 mg</td>
+                                          <td>7 %</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Ernst Handel</td>
+                                          <td>Roland Mendel</td>
+                                          <td>Austria</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Folate (Bg)</td>
+                                          <td>19 μg</td>
+                                          <td>5 %</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Vitamin C</td>
+                                          <td>5.9 mg</td>
+                                          <td>7 %</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Vitamin E</td>
+                                          <td>0.66 mg</td>
+                                          <td>4 %</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Vitamin K</td>
+                                          <td>13.2</td>
+                                          <td>13 %</td>
+                                        </tr>
+                                      </table>
+                                </div>
+                            </div>
+                            <div id="review" class="tabs-content">
+                                IKKI narsa Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet labore fugiat odit. Recusandae quaerat placeat dicta tenetur! Placeat, illo dolore!
+                            </div>
+                            <div id="questions" class="tabs-content">
+                                UCH NARSA Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptatem eligendi vero, blanditiis corrupti soluta.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="headline-container container">
+            <div class="testimonials-header">
+                <p class="section-title">Related products</p>
+                <button class="section-btn">More products</button>
+            </div>
+            <div class="cards">
+                <div class="bestseller-card">
+                    <img src="img/best-selling-bg.png" alt="" class="bestseller-card-img" width="237" height="180">
+                    <p class="bestseller-title">Product title</p>
+                    <p class="bestseller-desc">Space for a small product description </p>
+                    <div class="product-info">
+                        <div class="product-cost-info">
+                            <p class="product-cost">3.26 USD</span>
+                        </div>
+                        <button class="buy-btn btn">Buy now</button>
+                    </div>
+                </div>
+                <div class="bestseller-card">
+                    <img src="img/best-selling-bg.png" alt="" class="bestseller-card-img" width="237" height="180">
+                    <p class="bestseller-title">Product title</p>
+                    <p class="bestseller-desc">Space for a small product description </p>
+                    <div class="product-info">
+                        <div class="product-cost-info">
+                            <p class="product-cost">1.48 USD</span>
+                        </div>
+                        <button class="buy-btn btn">Buy now</button>
+                    </div>
+                </div>
+                <div class="bestseller-card">
+                    <img src="img/best-selling-bg.png" alt="" class="bestseller-card-img" width="237" height="180">
+                    <p class="bestseller-title">Product title</p>
+                    <p class="bestseller-desc">Space for a small product description </p>
+                    <div class="product-info">
+                        <div class="product-cost-info">
+                            <p class="product-cost">0.28 USD</span>
+                            <p class="discount-cost">48.56</p>
+                        </div>
+                        <button class="buy-btn btn">Buy now</button>
+                    </div>
+                </div>
+                <div class="bestseller-card">
+                    <img src="img/best-selling-bg.png" alt="" class="bestseller-card-img" width="237" height="180">
+                    <p class="bestseller-title">Product title</p>
+                    <p class="bestseller-desc">Space for a small product description </p>
+                    <div class="product-info">
+                        <div class="product-cost-info">
+                            <p class="product-cost">1.12 USD</span>
+                        </div>
+                        <button class="buy-btn btn">Buy now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container container">
+            <div class="footer-menu">
+                <h3 class="menu-title">Get in touch</h3>
+                <ul class="footer-item"> 
+                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">About us</a></li>
+                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Careers</a></li>
+                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Press Releases</a></li>
+                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-menu">
+                <h3 class="menu-title">Connections</h3>
+                <ul class="footer-item">
+                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Facebook</a></li>
+                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Twitter</a></li>
+                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Instagram</a></li>
+                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Youtube</a></li>
+                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Linekdin</a></li>
+                </ul>
+            </div>
+            <div class="footer-menu">
+                <h3 class="menu-title">Earnings</h3>
+                <ul class="footer-item"> 
+                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Become an Affiliate</a></li>
+                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Advertise your product</a></li>
+                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Sell on Market</a></li>
+                </ul>
+            </div>
+            <div class="footer-menu">
+                <h3 class="menu-title">Account</h3>
+                <ul class="footer-item"> 
+                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Your account</a></li>
+                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Returns Centre</a></li>
+                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">100 % purchase protection</a></li>
+                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Chat with us</a></li>
+                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Help</a></li>
+                </ul>
+            </div>
+        </div>
+        <section class="tags container">
+            <h3 class="section-title">Product tags</h3>
+            <ul class="tags-list">
+                <ul class="tags-item"><a href="#" class="tags-link links">Beans</a></ul>
+                <ul class="tags-item"><a href="#" class="tags-link links">Carrots</a></ul>
+                <ul class="tags-item"><a href="#" class="tags-link links">Apples</a></ul>
+                <ul class="tags-item"><a href="#" class="tags-link links">Garlic</a></ul>
+                <ul class="tags-item"><a href="#" class="tags-link links">Mushrooms</a></ul>
+                <ul class="tags-item"><a href="#" class="tags-link links">Tomatoes</a></ul>
+                <ul class="tags-item"><a href="#" class="tags-link links">Chilli peppers</a></ul>
+                <ul class="tags-item"><a href="#" class="tags-link links">Brocolli</a></ul>
+                <ul class="tags-item"><a href="#" class="tags-link links">Watermelons</a></ul>
+                <ul class="tags-item"><a href="#" class="tags-link links">Oranges</a></ul>
+                <ul class="tags-item"><a href="#" class="tags-link links">Bananas</a></ul>
+                <ul class="tags-item"><a href="#" class="tags-link links">Grapes</a></ul>
+                <ul class="tags-item"><a href="#" class="tags-link links">Cherries</a></ul>
+                <ul class="tags-item"><a href="#" class="tags-link links">Meat</a></ul>
+                <ul class="tags-item"><a href="#" class="tags-link links">Seo tag</a></ul>
+                <ul class="tags-item"><a href="#" class="tags-link links">Fish</a></ul>
+                <ul class="tags-item"><a href="#" class="tags-link links">Seo tag</a></ul>
+                <ul class="tags-item"><a href="#" class="tags-link links">Fresh food</a></ul>
+                <ul class="tags-item"><a href="#" class="tags-link links">Lemons</a></ul>
+            </ul>
+            <p class="copyright">Copyright © 2020 petrbilek.com</p>
+        </section>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0", maximum-scale=1.0, user-scalable=0>
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <title>E-commerce project</title>
+</head>
+<body>
+    <header class="header-container container">
+        <div class="top-header">
+            <div class="top-header-contact">
+                <span class="menu-text top-header-text top-contact">Chat with us</span>
+                <span class="top-header-text">+420 336 775 664</span>
+                <span class="top-header-text">info@freshnesecom.com</span>
+            </div>
+            <div class="top-header-menu">
+                <ul class="top-header-items">
+                    <li class="top-header-text"><a href="#" class="menu-text top-header-link links">Blog</a></li>
+                    <li class="top-header-text"><a href="#" class="menu-text top-header-link links">About Us</a></li>
+                    <li class="top-header-text"><a href="#" class="menu-text top-header-link links">Careers</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-header">
+            <a class="logo-link"><img class="logo-img" src="img/site-header-logo.svg" alt="header logo"  width="177" height="50"></a>
+            <form class="header-form" action="POST" >
+                <select name="category" id="category" class="category-select">
+                    <option value="all">All Categories</option>
+                    <option value="tech">technology</option>
+                    <option value="fashion">Fashion</option>
+                </select>
+                <input class="search" type="text" name="search" id="search" placeholder="Search Products, categories...">
+            </form>
+            <div class="header-cart">
+                <button class="account-btn"><img src="img/user-account.svg" alt="user icon" width="24" height="24"></button>
+                <button class="cart-btn"><img src="img/pocket.svg" alt="cart icon" width="24" height="24"></button>
+            </div>
+        </div>
+    </header>
+    <nav class="main-navbar container">
+        <ul class="header-navbar">
+            <li class="nav-items"><a href="" class="nav-link links">Bakery</a>
+                <ul class="dropdown">
+                    <li class="dropdown-items">Dropdown</li>
+                    <li class="dropdown-items">Keks</li>
+                    <li class="dropdown-items">Pirojniy</li>
+                    <li class="dropdown-items">Kulcha</li>
+                </ul>
+            </li>
+            <li class="nav-items"><a href="" class="nav-link links">Fruit and vegetables</a>
+                <ul class="dropdown">
+                    <li class="dropdown-items">Bread</li>
+                    <li class="dropdown-items">Keks</li>
+                    <li class="dropdown-items">Pirojniy</li>
+                    <li class="dropdown-items">Kulcha</li>
+                </ul>
+            </li>
+            <li class="nav-items"><a href="" class="nav-link links">Meat and fish</a>
+                <ul class="dropdown">
+                    <li class="dropdown-items">Bread</li>
+                    <li class="dropdown-items">Keks</li>
+                    <li class="dropdown-items">Pirojniy</li>
+                    <li class="dropdown-items">Kulcha</li>
+                </ul>
+            </li>
+            <li class="nav-items"><a href="" class="nav-link links">Drinks</a>
+                <ul class="dropdown">
+                    <li class="dropdown-items">Bread</li>
+                    <li class="dropdown-items">Keks</li>
+                    <li class="dropdown-items">Pirojniy</li>
+                    <li class="dropdown-items">Kulcha</li>
+                </ul>
+            </li>
+            <li class="nav-items"><a href="" class="nav-link links">Kitchen</a>
+                <ul class="dropdown">
+                    <li class="dropdown-items">Bread</li>
+                    <li class="dropdown-items">Keks</li>
+                    <li class="dropdown-items">Pirojniy</li>
+                    <li class="dropdown-items">Kulcha</li>
+                </ul>
+            </li>
+            <li class="nav-items"><a href="" class="nav-link links">Special nutrition</a>
+                <ul class="dropdown">
+                    <li class="dropdown-items">Bread</li>
+                    <li class="dropdown-items">Keks</li>
+                    <li class="dropdown-items">Pirojniy</li>
+                    <li class="dropdown-items">Kulcha</li>
+                </ul>
+            </li>
+            <li class="nav-items"><a href="" class="nav-link links">Baby</a>
+                <ul class="dropdown">
+                    <li class="dropdown-items">Bread</li>
+                    <li class="dropdown-items">Keks</li>
+                    <li class="dropdown-items">Pirojniy</li>
+                    <li class="dropdown-items">Kulcha</li>
+                </ul>
+            </li>
+            <li class="nav-items"><a href="" class="nav-link links">Pharmacy</a>
+                <ul class="dropdown">
+                    <li class="dropdown-items">Bread</li>
+                    <li class="dropdown-items">Keks</li>
+                    <li class="dropdown-items">Pirojniy</li>
+                    <li class="dropdown-items">Kulcha</li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <section class="category-menu">
+        <div class="categroy-menu-container container">
+            <div class="menu-list">
+                <p class="menu-title">Category menu</p>
+                <ul class="category-menu-list">
+                    <li class="cat-menu-items"><a href="#" class="cat-menu-text links">Bakery</a></li>
+                    <li class="cat-menu-items"><a href="#" class="cat-menu-text links">Fruit and vegetables</a></li>
+                    <li class="cat-menu-items"><a href="#" class="cat-menu-text links">Meat and fish</a></li>
+                    <li class="cat-menu-items"><a href="#" class="cat-menu-text links">Drinks</a></li>
+                    <li class="cat-menu-items"><a href="#" class="cat-menu-text links">Kitchen</a></li>
+                </ul>
+                <button class="more-btn btn">More categories</button>
+            </div>
+            <div class="banner-card">
+                <p class="supheading">Banner subfocus</p>
+                <p class="banner-title">Space for heading</p>
+                <button class="read-btn btn">Read recipes</button>
+            </div>
+            <div class="banner-card">
+                <p class="supheading">Banner subfocus</p>
+                <p class="banner-title">Space for heading</p>
+                <button class="read-btn btn">Read recipes</button>
+            </div>
+        </div>
+    </section>
+    <section class="bestseller">
+        <div class="bestseller-container container">
+            <div class="bestseller-menu-list">
+                <p class="menu-title best-menu-title">Best selling products</p>
+                <ul class="category-menu-list bestsec">
+                    <li class="cat-menu-items"><a href="#" class="cat-menu-text links">Kitchen</a></li>
+                    <li class="cat-menu-items"><a href="#" class="cat-menu-text links">Meat and fish</a></li>
+                    <li class="cat-menu-items"><a href="#" class="cat-menu-text links">Special nutrition</a></li>
+                    <li class="cat-menu-items"><a href="#" class="cat-menu-text links">Pharmacy</a></li>
+                    <li class="cat-menu-items"><a href="#" class="cat-menu-text links">Baby</a></li>
+                </ul>
+                <button class="more-btn btn bestsec">More products</button>
+            </div>
+            <div class="bestseller-card-list">
+                <div class="bestseller-card">
+                    <img src="img/best-selling-bg.png" alt="" class="bestseller-card-img" width="237" height="180">
+                    <p class="bestseller-title">Product title</p>
+                    <p class="bestseller-desc">Space for a small product description </p>
+                    <div class="product-info">
+                        <div class="product-cost-info">
+                            <p class="product-cost">1.48 USD</span>
+                            <p class="discount-cost"></p>
+                        </div>
+                        <button class="buy-btn btn">Buy now</button>
+                    </div>
+                </div>
+                <div class="bestseller-card">
+                    <img src="img/best-selling-bg.png" alt="" class="bestseller-card-img" width="237" height="180">
+                    <p class="bestseller-title">Product title</p>
+                    <p class="bestseller-desc">Space for a small product description </p>
+                    <div class="product-info">
+                        <div class="product-cost-info">
+                            <p class="product-cost">1.48 USD</span>
+                            <p class="discount-cost">48.56</p>
+                        </div>
+                        <button class="buy-btn btn">Buy now</button>
+                    </div>
+                </div>
+                <div class="bestseller-card">
+                    <img src="img/best-selling-bg.png" alt="" class="bestseller-card-img" width="237" height="180">
+                    <p class="bestseller-title">Product title</p>
+                    <p class="bestseller-desc">Space for a small product description </p>
+                    <div class="product-info">
+                        <div class="product-cost-info">
+                            <p class="product-cost">1.48 USD</span>
+                            <p class="discount-cost">48.56</p>
+                        </div>
+                        <button class="buy-btn btn">Buy now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="farmers">
+        <div class="bestseller-container container">
+            <div class="bestseller-menu-list">
+                <p class="menu-title best-menu-title">Best from Farmers</p>
+                <ul class="category-menu-list bestsec">
+                    <li class="cat-menu-items"><a href="#" class="cat-menu-text links">Carrots</a></li>
+                    <li class="cat-menu-items"><a href="#" class="cat-menu-text links">Tomatoes</a></li>
+                    <li class="cat-menu-items"><a href="#" class="cat-menu-text links">Potatoes</a></li>
+                    <li class="cat-menu-items"><a href="#" class="cat-menu-text links">Chicken</a></li>
+                    <li class="cat-menu-items"><a href="#" class="cat-menu-text links">Pork</a></li>
+                </ul>
+                <button class="more-btn btn bestsec">More products</button>
+            </div>
+            <div class="bestseller-card-list">
+                <div class="bestseller-card">
+                    <img src="img/best-selling-bg.png" alt="" class="bestseller-card-img" width="237" height="180">
+                    <p class="bestseller-title">Product title</p>
+                    <p class="bestseller-desc">Space for a small product description </p>
+                    <div class="product-info">
+                        <div class="product-cost-info">
+                            <p class="product-cost">1.48 USD</span>
+                            <p class="discount-cost"></p>
+                        </div>
+                        <button class="buy-btn btn">Buy now</button>
+                    </div>
+                </div>
+                <div class="bestseller-card">
+                    <img src="img/best-selling-bg.png" alt="" class="bestseller-card-img" width="237" height="180">
+                    <p class="bestseller-title">Product title</p>
+                    <p class="bestseller-desc">Space for a small product description </p>
+                    <div class="product-info">
+                        <div class="product-cost-info">
+                            <p class="product-cost">1.48 USD</span>
+                            <p class="discount-cost">48.56</p>
+                        </div>
+                        <button class="buy-btn btn">Buy now</button>
+                    </div>
+                </div>
+                <div class="bestseller-card">
+                    <img src="img/best-selling-bg.png" alt="" class="bestseller-card-img" width="237" height="180">
+                    <p class="bestseller-title">Product title</p>
+                    <p class="bestseller-desc">Space for a small product description </p>
+                    <div class="product-info">
+                        <div class="product-cost-info">
+                            <p class="product-cost">1.48 USD</span>
+                            <p class="discount-cost">48.56</p>
+                        </div>
+                        <button class="buy-btn btn">Buy now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials">
+        <div class="testimonials-container">
+            <div class="testimonials-header container">
+                <p class="section-title">Our customers says</p>
+                <button class="section-btn">Button</button>
+            </div>
+            <div class="testimonial-carousel js-flickity container"
+                data-flickity-options='{ "wrapAround": true }'>
+                <div class="testimonial-card">
+                    <div class="testimonial-info">
+                        <p class="testimonial-desc ">“ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “</p>
+                        <p class="author-name">Name and Surname</p>
+                        <img src="img/girl-with-long-hair.png" alt="Girls image" class="testimonial-img" width="48" height="48">
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-info">
+                        <p class="testimonial-desc">“ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “</p>
+                        <p class="author-name">Name and Surname</p>
+                        <img src="img/old-men-img.png" alt="Girls image" class="testimonial-img" width="48" height="48">
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-info">
+                        <p class="testimonial-desc">“ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “</p>
+                        <p class="author-name">Name and Surname</p>
+                        <img src="img/men-img-opaque.png" alt="Girls image" class="testimonial-img" width="48" height="48">
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-info">
+                        <p class="testimonial-desc">“ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “</p>
+                        <p class="author-name">Name and Surname</p>
+                        <img src="img/men-with-sunglasses.png" alt="Girls image" class="testimonial-img" width="48" height="48">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="headline">
+        <div class="headline-container container">
+            <div class="testimonials-header">
+                <p class="section-title">Section Headline</p>
+                <button class="section-btn">Button</button>
+            </div>
+            <div class="cards">
+                <div class="bestseller-card">
+                    <img src="img/best-selling-bg.png" alt="" class="bestseller-card-img" width="237" height="180">
+                    <p class="bestseller-title">Product title</p>
+                    <p class="bestseller-desc">Space for a small product description </p>
+                    <div class="product-info">
+                        <div class="product-cost-info">
+                            <p class="product-cost">3.26 USD</span>
+                        </div>
+                        <button class="buy-btn btn">Buy now</button>
+                    </div>
+                </div>
+                <div class="bestseller-card">
+                    <img src="img/best-selling-bg.png" alt="" class="bestseller-card-img" width="237" height="180">
+                    <p class="bestseller-title">Product title</p>
+                    <p class="bestseller-desc">Space for a small product description </p>
+                    <div class="product-info">
+                        <div class="product-cost-info">
+                            <p class="product-cost">1.48 USD</span>
+                        </div>
+                        <button class="buy-btn btn">Buy now</button>
+                    </div>
+                </div>
+                <div class="bestseller-card">
+                    <img src="img/best-selling-bg.png" alt="" class="bestseller-card-img" width="237" height="180">
+                    <p class="bestseller-title">Product title</p>
+                    <p class="bestseller-desc">Space for a small product description </p>
+                    <div class="product-info">
+                        <div class="product-cost-info">
+                            <p class="product-cost">0.28 USD</span>
+                            <p class="discount-cost">48.56</p>
+                        </div>
+                        <button class="buy-btn btn">Buy now</button>
+                    </div>
+                </div>
+                <div class="bestseller-card">
+                    <img src="img/best-selling-bg.png" alt="" class="bestseller-card-img" width="237" height="180">
+                    <p class="bestseller-title">Product title</p>
+                    <p class="bestseller-desc">Space for a small product description </p>
+                    <div class="product-info">
+                        <div class="product-cost-info">
+                            <p class="product-cost">1.12 USD</span>
+                        </div>
+                        <button class="buy-btn btn">Buy now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="blog">
+        <div class="blog-container container">
+            <div class="blog-header">
+                <p class="section-title">Read our Blogposts</p>
+                <button class="section-btn">Button</button>
+            </div>
+            <div class="blog-content">
+                <div class="feature-blog">
+                    <img src="img/testy-dinner.png" alt="dinner image" class="blog-bg-img" width="469" height="400">
+                    <p class="category-name">Dinner tips</p>
+                    <div class="blog-title">Our chef tips for a great and tasty dinner ready in 20 minutes</div>
+                    <img src="img/men-img-opaque.png" alt="author image" class="blog-author-img" width="32" height="32">
+                    <p class="blog-author-name">Author</p>
+                    <p class="blog-date">17.6.2020</p>
+                </div>
+                <div class="home-full-blog">
+                    <img src="img/family-love.png" alt="family love" class="full-blog-img" width="269" height="180">
+                    <p class="full-category-name">Vegetables</p>
+                    <p class="full-blog-title">Which vegetable your family will love and want’s eat each day</p>
+                    <div class="full-blog-info">
+                        <span class="full-blog-author-name posts-text">Author</span>
+                        <span class="full-blog-date posts-text">15.6.2020</span>
+                    </div>
+                </div>
+                <div class="posts-list">
+                    <div class="single-post">
+                        <div class="posts-info">
+                            <p class="posts-title">Salat is kinda good start to your morning routines</p>
+                            <span class="posts-author posts-text">Author</span>
+                            <span class="posts-text">15.6.2020</span>
+                        </div>
+                        <img src="img/salat-kinda.png" alt="" class="posts-img" width="96" height="96">
+                    </div>
+                    <div class="single-post">
+                        <div class="posts-info">
+                            <p class="posts-title">Salat is kinda good start to your morning routines</p>
+                            <span class="posts-author posts-text">Author</span>
+                            <span class="posts-text">15.6.2020</span>
+                        </div>
+                        <img src="img/salat-kinda.png" alt="" class="posts-img" width="96" height="96">
+                    </div>
+                    <div class="single-post">
+                        <div class="posts-info">
+                            <p class="posts-title">Salat is kinda good start to your morning routines</p>
+                            <span class="posts-author posts-text">Author</span>
+                            <span class="posts-text">15.6.2020</span>
+                        </div>
+                        <img src="img/salat-kinda.png" alt="" class="posts-img" width="96" height="96">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="site-footer">
+        <div class="footer-container container">
+            <div class="footer-menu">
+                <h3 class="menu-title">Get in touch</h3>
+                <ul class="footer-item"> 
+                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">About us</a></li>
+                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Careers</a></li>
+                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Press Releases</a></li>
+                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-menu">
+                <h3 class="menu-title">Connections</h3>
+                <ul class="footer-item">
+                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Facebook</a></li>
+                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Twitter</a></li>
+                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Instagram</a></li>
+                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Youtube</a></li>
+                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Linekdin</a></li>
+                </ul>
+            </div>
+            <div class="footer-menu">
+                <h3 class="menu-title">Earnings</h3>
+                <ul class="footer-item"> 
+                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Become an Affiliate</a></li>
+                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Advertise your product</a></li>
+                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Sell on Market</a></li>
+                </ul>
+            </div>
+            <div class="footer-menu">
+                <h3 class="menu-title">Account</h3>
+                <ul class="footer-item"> 
+                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Your account</a></li>
+                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Returns Centre</a></li>
+                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">100 % purchase protection</a></li>
+                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Chat with us</a></li>
+                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Help</a></li>
+                </ul>
+            </div>
+        </div>
+        <section class="tags container">
+            <h3 class="section-title">Product tags</h3>
+            <ul class="tags-list">
+                <ul class="tags-item"><a href="#" class="tags-link links">Beans</a></ul>
+                <ul class="tags-item"><a href="#" class="tags-link links">Carrots</a></ul>
+                <ul class="tags-item"><a href="#" class="tags-link links">Apples</a></ul>
+                <ul class="tags-item"><a href="#" class="tags-link links">Garlic</a></ul>
+                <ul class="tags-item"><a href="#" class="tags-link links">Mushrooms</a></ul>
+                <ul class="tags-item"><a href="#" class="tags-link links">Tomatoes</a></ul>
+                <ul class="tags-item"><a href="#" class="tags-link links">Chilli peppers</a></ul>
+                <ul class="tags-item"><a href="#" class="tags-link links">Brocolli</a></ul>
+                <ul class="tags-item"><a href="#" class="tags-link links">Watermelons</a></ul>
+                <ul class="tags-item"><a href="#" class="tags-link links">Oranges</a></ul>
+                <ul class="tags-item"><a href="#" class="tags-link links">Bananas</a></ul>
+                <ul class="tags-item"><a href="#" class="tags-link links">Grapes</a></ul>
+                <ul class="tags-item"><a href="#" class="tags-link links">Cherries</a></ul>
+                <ul class="tags-item"><a href="#" class="tags-link links">Meat</a></ul>
+                <ul class="tags-item"><a href="#" class="tags-link links">Seo tag</a></ul>
+                <ul class="tags-item"><a href="#" class="tags-link links">Fish</a></ul>
+                <ul class="tags-item"><a href="#" class="tags-link links">Seo tag</a></ul>
+                <ul class="tags-item"><a href="#" class="tags-link links">Fresh food</a></ul>
+                <ul class="tags-item"><a href="#" class="tags-link links">Lemons</a></ul>
+            </ul>
+            <p class="copyright">Copyright © 2020 petrbilek.com</p>
+        </section>
+    </footer>
+
+
+    <script src="js/carousel.js"></script>
+</body>
+</html>
