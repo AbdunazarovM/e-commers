@@ -629,6 +629,7 @@ body{
 }
 .blog-content{
     display: flex;
+    align-items: flex-start;
     justify-content: space-between;
 }
 .feature-blog{
@@ -1556,7 +1557,6 @@ section.range-slider input[type=range]::-moz-focus-outer {
     font-size: 14px;
     line-height: 19px;
     border: none;
-    outline: ;
     background-color: #F9F9F9;
     width: 15px;
 }
@@ -1646,8 +1646,7 @@ section.range-slider input[type=range]::-moz-focus-outer {
 .tab-desc-block {
     margin-bottom: 32px;
 }
-.origins {
-}
+
 .tab-desc-title {
     font-weight: 500;
     margin-bottom: 8px;
@@ -1656,8 +1655,7 @@ section.range-slider input[type=range]::-moz-focus-outer {
     font-size: 14px;
     line-height: 19px;
 }
-.tab-desc-table {
-}
+
 table{
     margin-top: 16px;
     width: 100%;
@@ -1671,7 +1669,7 @@ th{
     width: 33.333%;
 }
 tr:nth-child(even){
-    background: #FDFDFD;
+    background: #fdfdfd;
 }
 td{
     padding: 10px 0;
@@ -1701,10 +1699,6 @@ td{
 
 .billing-sidebar {
     width: 670px;
-}
-.billing-info-section {
-}
-.checkout-form {
 }
 .billing-header {
     margin-bottom: 32px;
@@ -1870,9 +1864,7 @@ td{
 #credit-card:checked ~ .card-info{
     display: block;
 }
-.credit-card-name{
-    /* margin-right: 435px; */
-}
+
 .payment-method-img{
     position: absolute;
     right: 10px;
@@ -2306,10 +2298,6 @@ td{
     border-radius: 12px;
 }
 
-.gradient-img{
-    
-}
-
 .feature-blog-content{
     padding-top: 32px;
     padding-bottom: 32px;
@@ -2346,10 +2334,9 @@ td{
 /* FULL BLOG */
 
 .full-blog{
-    width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    padding-top: 48px;
     padding-bottom: 48px;
 }
 .full-blog-sidebar{
