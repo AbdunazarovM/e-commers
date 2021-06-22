@@ -58,6 +58,7 @@ html{
     box-sizing: inherit;
 }
 body{
+    /* background-color: var(--gray-color); */
     font-family: "Poppins", "Arial", sans-serif;
     font-size: 15px;
     line-height: 22px;
@@ -80,12 +81,14 @@ body{
     height: 1px;
     margin: -1px;
     border: 0;
-    padding: 0;
+    padding; 0;
     clip: rect(0 0 0 0);
     overflow: hidden;  
 }
-
 /* HEADER */
+.header-container{
+    
+}
 .top-header{
     padding: 16px 0;
     margin-bottom: 16px;
@@ -165,11 +168,13 @@ body{
 .account-btn{
     background: none;
     margin-right: 30px;
+    border: none;
 }
 .cart-btn {
     position: relative;
     padding: 0;
     background: none;
+    border: none;
 }
 .cart-btn::before{
     content: "4";
@@ -182,9 +187,6 @@ body{
     left: -1px;
     width: 16px;
     height: 18px;
-}
-.btn {
-    border: none;
 }
 
 /* NAVBAR */
@@ -614,7 +616,9 @@ body{
         margin-right: 10px;
     }
 }
+
 /* BLOG SECTION */
+
 .blog{
     padding: 64px 0;
 }
@@ -626,7 +630,6 @@ body{
 }
 .blog-content{
     display: flex;
-    align-items: flex-start;
     justify-content: space-between;
 }
 .feature-blog{
@@ -698,7 +701,7 @@ body{
     line-height: 16px;
     color: #f9f9f9;
 }
-.full-blog{
+.home-full-blog{
     width: 269px;
     margin-right: 32px;
 }
@@ -1553,6 +1556,7 @@ section.range-slider input[type=range]::-moz-focus-outer {
     font-size: 14px;
     line-height: 19px;
     border: none;
+    outline: ;
     background-color: #F9F9F9;
     width: 15px;
 }
@@ -1642,7 +1646,8 @@ section.range-slider input[type=range]::-moz-focus-outer {
 .tab-desc-block {
     margin-bottom: 32px;
 }
-
+.origins {
+}
 .tab-desc-title {
     font-weight: 500;
     margin-bottom: 8px;
@@ -1651,7 +1656,8 @@ section.range-slider input[type=range]::-moz-focus-outer {
     font-size: 14px;
     line-height: 19px;
 }
-
+.tab-desc-table {
+}
 table{
     margin-top: 16px;
     width: 100%;
@@ -1665,7 +1671,7 @@ th{
     width: 33.333%;
 }
 tr:nth-child(even){
-    background: #fdfdfd;
+    background: #FDFDFD;
 }
 td{
     padding: 10px 0;
@@ -1695,6 +1701,10 @@ td{
 
 .billing-sidebar {
     width: 670px;
+}
+.billing-info-section {
+}
+.checkout-form {
 }
 .billing-header {
     margin-bottom: 32px;
@@ -1860,7 +1870,9 @@ td{
 #credit-card:checked ~ .card-info{
     display: block;
 }
-
+.credit-card-name{
+    /* margin-right: 435px; */
+}
 .payment-method-img{
     position: absolute;
     right: 10px;
@@ -2294,6 +2306,10 @@ td{
     border-radius: 12px;
 }
 
+.gradient-img{
+    
+}
+
 .feature-blog-content{
     padding-top: 32px;
     padding-bottom: 32px;
@@ -2330,9 +2346,10 @@ td{
 /* FULL BLOG */
 
 .full-blog{
+    /* width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between; */
+    padding-top: 48px;
     padding-bottom: 48px;
 }
 .full-blog-sidebar{
@@ -2576,5 +2593,57 @@ td{
         margin-bottom: 20px;
         
     }
-    
+}
+
+/* SMALL DESIGN IMPROVEMENTS */
+.btn{
+    display: flex;
+    align-items: center;
+    position: relative;
+    border: none;
+}
+.btn::after{
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+}
+.read-btn{
+    width: 161px;
+    margin-right: 10px;
+}
+.read-btn::after{
+    top: 17px;
+    right: 10px;
+    background: url("/img/arrow-right.svg") no-repeat;
+}
+.more-btn::after{
+    top: 17px;
+    right: 10px;
+    background: url("/img/arrow-right-black.svg") no-repeat;
+}
+.links:hover, .links:focus{
+    color: var(--green-color);
+}
+.cat-menu-text:hover, .cat-menu-text:focus{
+    color: var(--black-color);
+}
+.banner-card:hover, .banner-card:focus{
+    background-color: var(--green-color);
+}
+.banner-card:hover > .banner-title, .supheading{
+    color: #fff;
+}
+.read-btn:hover, .read-btn:focus{
+    cursor: pointer;
+}
+.bestseller-card:hover, .bestseller-card:focus{
+    -webkit-box-shadow: 0px 6px 23px -3px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 6px 23px -3px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 6px 23px -3px rgba(34, 60, 80, 0.2);
+    cursor: pointer;
+}
+.more-btn:hover, .more-btn:focus{
+    background-color: var(--green-color);
+    color: #fff;
 }
