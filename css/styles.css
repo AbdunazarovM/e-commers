@@ -4,7 +4,7 @@
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    src: local(''),
+    src:
     url('../fonts/poppins-v15-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
     url('../fonts/poppins-v15-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
@@ -13,7 +13,7 @@
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    src: local(''),
+    src:
     url('../fonts/poppins-v15-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
     url('../fonts/poppins-v15-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
@@ -22,7 +22,7 @@
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
-    src: local(''),
+    src:
     url('../fonts/poppins-v15-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
     url('../fonts/poppins-v15-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
@@ -32,7 +32,7 @@
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
-    src: local(''),
+    src:
     url('../fonts/open-sans-v20-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
     url('../fonts/open-sans-v20-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
@@ -81,14 +81,11 @@ body{
     height: 1px;
     margin: -1px;
     border: 0;
-    padding; 0;
+    padding: 0;
     clip: rect(0 0 0 0);
     overflow: hidden;  
 }
 /* HEADER */
-.header-container{
-    
-}
 .top-header{
     padding: 16px 0;
     margin-bottom: 16px;
@@ -1556,7 +1553,7 @@ section.range-slider input[type=range]::-moz-focus-outer {
     font-size: 14px;
     line-height: 19px;
     border: none;
-    outline: ;
+    outline: none;
     background-color: #F9F9F9;
     width: 15px;
 }
@@ -1646,8 +1643,7 @@ section.range-slider input[type=range]::-moz-focus-outer {
 .tab-desc-block {
     margin-bottom: 32px;
 }
-.origins {
-}
+
 .tab-desc-title {
     font-weight: 500;
     margin-bottom: 8px;
@@ -1656,8 +1652,7 @@ section.range-slider input[type=range]::-moz-focus-outer {
     font-size: 14px;
     line-height: 19px;
 }
-.tab-desc-table {
-}
+
 table{
     margin-top: 16px;
     width: 100%;
@@ -1701,10 +1696,6 @@ td{
 
 .billing-sidebar {
     width: 670px;
-}
-.billing-info-section {
-}
-.checkout-form {
 }
 .billing-header {
     margin-bottom: 32px;
@@ -1869,9 +1860,6 @@ td{
 }
 #credit-card:checked ~ .card-info{
     display: block;
-}
-.credit-card-name{
-    /* margin-right: 435px; */
 }
 .payment-method-img{
     position: absolute;
@@ -2305,11 +2293,6 @@ td{
     background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
     border-radius: 12px;
 }
-
-.gradient-img{
-    
-}
-
 .feature-blog-content{
     padding-top: 32px;
     padding-bottom: 32px;
